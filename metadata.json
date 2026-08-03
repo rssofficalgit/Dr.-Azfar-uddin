@@ -1,0 +1,6 @@
+{
+  "name": "React Starter Template",
+  "description": "A blank React application initialized with Tailwind CSS, TypeScript, shadcn/ui components, ESLint, and Git repository setup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
