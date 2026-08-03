@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow administrative or internal system paths
+Disallow: /api/
+Disallow: /_internal/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.drazfarshaikh.com/sitemap.xml
