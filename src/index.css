@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #DCA745;
+  --color-primary-hover: #c6943c;
+  --font-sans: "Lato", sans-serif;
+}
+
+body {
+  @apply font-sans text-slate-900 bg-white;
+}
