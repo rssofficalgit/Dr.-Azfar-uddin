@@ -1,0 +1,171 @@
+{
+  "version": "0.4",
+  "title": "Azfar About Section",
+  "type": "section",
+  "content": [
+    {
+      "id": "azfar111",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "gap": "extended",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col1111",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 30
+          },
+          "elements": [
+            {
+              "id": "img1111",
+              "elType": "widget",
+              "isInner": false,
+              "settings": {
+                "image": {
+                  "url": "https://azfar.profdrabdusshakurkhan.com/wp-content/uploads/2026/06/WhatsApp-Image-2025-11-02-at-14.36.07.jpeg"
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                }
+              },
+              "widgetType": "image"
+            }
+          ]
+        },
+        {
+          "id": "col2222",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 40,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "20",
+              "bottom": "0",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "head111",
+              "elType": "widget",
+              "isInner": false,
+              "settings": {
+                "title": "MEET OUR SPECIALIST",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit":"px","size":13},
+                "typography_font_weight": "700",
+                "title_color": "#D9A441"
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "head222",
+              "elType": "widget",
+              "isInner": false,
+              "settings": {
+                "title": "Dr. Azfar Uddin Shaikh",
+                "title_color": "#004B40",
+                "typography_typography": "custom",
+                "typography_font_size": {"unit":"px","size":36},
+                "typography_font_weight": "700"
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "text111",
+              "elType": "widget",
+              "isInner": false,
+              "settings": {
+                "editor": "<p style=\"color: #006B5B; font-weight: 600; margin-bottom: 20px; font-size: 16px;\">MBBS, FCPS (Urology), MCh (Urology), FACS (USA)</p><p style=\"color: #4A5568; line-height: 1.7; margin-bottom: 30px; font-size: 15px;\">Renowned Urologist, Andrologist & Microsurgeon dedicated to providing advanced, ethical and compassionate care for all urological and male fertility concerns.</p>"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "btn111",
+              "elType": "widget",
+              "isInner": false,
+              "settings": {
+                "text": "View Full Profile",
+                "link": {"url": "#"},
+                "background_color": "#004B40",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": true
+                }
+              },
+              "widgetType": "button"
+            }
+          ]
+        },
+        {
+          "id": "col3333",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 30,
+            "background_background": "classic",
+            "background_color": "#FEF9F5",
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "30",
+              "bottom": "40",
+              "left": "30",
+              "isLinked": false
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "24",
+              "right": "24",
+              "bottom": "24",
+              "left": "24",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "icon111",
+              "elType": "widget",
+              "isInner": false,
+              "settings": {
+                "icon_list": [
+                  {"text": "American Board Certified", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+                  {"text": "Fellow of American College of Surgeons", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+                  {"text": "Advanced Training in USA & Europe", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}},
+                  {"text": "International Conference Speaker", "icon": {"value": "fas fa-check-circle", "library": "fa-solid"}}
+                ],
+                "icon_color": "#006B5B",
+                "text_color": "#2D3748"
+              },
+              "widgetType": "icon-list"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
