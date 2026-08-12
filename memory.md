@@ -199,6 +199,16 @@
 
 ## 13. Change Log
 
+* **2026-08-12:** Updated the English language flag badge in `Header.tsx` to the US flag 🇺🇸 per user request.
+* **2026-08-12:** Placed the Language toggle button *after* the Book Appointment button in `Header.tsx` and removed the Chamber Hours block from `Footer.tsx` per user request.
+* **2026-08-12:** Added custom SVG flag badges (Bangladesh 🇧🇩 and English/UK 🇬🇧) to the Language toggle button in `Header.tsx` for desktop and mobile menus per user request.
+* **2026-08-12:** Configured `Noto Serif Bengali` from Google Fonts in `index.html` and `src/index.css` as the primary font for all Bangla text and `html[lang="bn"]` mode per user request.
+* **2026-08-12:** Added a complete bilingual (English & Bangla) translation system:
+  - Created `src/data/translations.ts` and `src/context/LanguageContext.tsx` with `localStorage` persistence.
+  - Added a prominent `বাংলা | EN` language toggle button in both desktop Header and mobile menu.
+  - Translated all UI components (`Header`, `Hero`, `Stats`, `About`, `Services`, `Banner`, `Chambers`, `Testimonials`, `Publications`, `LatestBlogs`, `FeaturedVideos`, `FAQ`, `Footer`, `AboutPage`, `ContactPage`, `BlogPage`, `BlogPostDetails`) seamlessly.
+* **2026-08-12:** Updated chamber titles in `Chambers.tsx` to `AZFAR UROLOGY, ANDROLOGY, MICROSURGERY & FERTILITY CENTER` (and `OFFICE`), and updated the Office address to *"SEL Kabir Center 9th floor House 2/A Road 8 GreenRoad dhanmondi Dhaka"*.
+* **2026-08-12:** Updated `Hero.tsx` headline to *"World class Urology & Andrology Clinic In Bangladesh / AZFAR Urology, Andrology & Fertility Center."* and updated key feature bullet points to 4 specific credentials provided by user.
 * **2026-08-12:** Created `vercel.json` and `public/_redirects` with SPA rewrite rules (`/(.*)` -> `/index.html`) to resolve Vercel 404 NOT_FOUND errors on sub-page refreshes/direct visits.
 * **2026-08-12:** Added `Prof.` prefix before `Dr. Azfar Uddin Shaikh` across all site titles, components (`About.tsx`, `Hero.tsx`, `FAQ.tsx`, `Testimonials.tsx`, `Header.tsx`, `Footer.tsx`), blog data (`blogs.ts`), assets, and `index.html`.
 * **2026-08-12:** Removed the floating contact card containing the phone number from the `Hero.tsx` section per user request.

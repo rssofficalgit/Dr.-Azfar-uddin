@@ -1,29 +1,51 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function FAQ() {
+  const { t, language } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
     {
-      question: "How do I book an appointment?",
-      answer: "You can book an appointment by calling any of our chamber phone numbers listed in the 'Our Chambers' section, or by clicking the 'Book Appointment' button at the top of the page to schedule online."
+      question: language === 'bn' 
+        ? "কীভাবে সিরিয়াল বা অ্যাপয়েন্টমেন্ট বুক করব?" 
+        : "How do I book an appointment?",
+      answer: language === 'bn'
+        ? "আমাদের চেম্বার সেকশনে প্রদত্ত যেকোনো ফোন নম্বরে কল করে অথবা ওয়েবসাইটের 'অ্যাপয়েন্টমেন্ট নিন' বাটনে ক্লিক করে সরাসরি সিরিয়াল দিতে পারেন।"
+        : "You can book an appointment by calling any of our chamber phone numbers listed in the 'Our Chambers' section, or by clicking the 'Book Appointment' button at the top of the page to schedule online."
     },
     {
-      question: "What should I bring to my first consultation?",
-      answer: "Please bring any previous medical records, prescriptions, ultrasound reports, or relevant test results. Also, carry a valid ID and a list of any medications you are currently taking."
+      question: language === 'bn'
+        ? "প্রথমবার ভিজিটের সময় সাথে কী কী আনা উচিত?"
+        : "What should I bring to my first consultation?",
+      answer: language === 'bn'
+        ? "আপনার পূর্ববর্তী সকল চিকিৎসার ফাইল, প্রেসক্রিপশন, আল্ট্রাসাউন্ড ও রক্ত পরীক্ষা রিপোর্ট এবং নিয়মিত খাওয়া ওষুধের তালিকা সাথে নিয়ে আসবেন।"
+        : "Please bring any previous medical records, prescriptions, ultrasound reports, or relevant test results. Also, carry a valid ID and a list of any medications you are currently taking."
     },
     {
-      question: "Do you offer telemedicine or online consultations?",
-      answer: "Yes, we offer online video consultations for follow-ups and initial assessments. Please contact our front desk to schedule a telemedicine appointment."
+      question: language === 'bn'
+        ? "আপনারা কি অনলাইন বা টেলিমেডিসিন পরামর্শ দেন?"
+        : "Do you offer telemedicine or online consultations?",
+      answer: language === 'bn'
+        ? "হ্যাঁ, ফলো-আপ ও প্রাথমিক পরামর্শের জন্য অনলাইন ভিডিও কন্সালটেশনের ব্যবস্থা রয়েছে। টেলিমেডিসিন অ্যাপয়েন্টমেন্টের জন্য হেল্পডেস্কে কল করুন।"
+        : "Yes, we offer online video consultations for follow-ups and initial assessments. Please contact our front desk to schedule a telemedicine appointment."
     },
     {
-      question: "What are the success rates for male infertility treatments?",
-      answer: "Success rates vary depending on the specific condition and underlying causes. Prof. Dr. Azfar uses the most advanced microsurgical techniques, which significantly increase the chances of success compared to traditional methods."
+      question: language === 'bn'
+        ? "পুরুষ বন্ধ্যাত্ব চিকিৎসার সফলতার হার কেমন?"
+        : "What are the success rates for male infertility treatments?",
+      answer: language === 'bn'
+        ? "সফলতার হার রোগের ধরন ও জটিলতার উপর নির্ভর করে। প্রফেসর ডা. আজফার অত্যাধুনিক মাইক্রোসার্জিক্যাল পদ্ধতি ব্যবহার করেন, যা প্রচলিত চিকিৎসার চেয়ে অনেক বেশি সফল।"
+        : "Success rates vary depending on the specific condition and underlying causes. Prof. Dr. Azfar uses the most advanced microsurgical techniques, which significantly increase the chances of success compared to traditional methods."
     },
     {
-      question: "Is kidney stone laser surgery painful?",
-      answer: "Laser lithotripsy is a minimally invasive procedure performed under anesthesia, meaning you will not feel pain during the surgery. Post-operative discomfort is generally mild and easily managed with prescribed medication."
+      question: language === 'bn'
+        ? "লেজার প্রযুক্তিতে কিডনি পাথর অপসারণ কি যন্ত্রণাদায়ক?"
+        : "Is kidney stone laser surgery painful?",
+      answer: language === 'bn'
+        ? "লেজার লিথোট্রিপসি একটি ব্যথামুক্ত ও আধুনিক চিকিৎসা পদ্ধতি যা এনেস্থেসিয়ার অধীনে করা হয়। অপারেশনের সময় বা পরে কোনো তীব্র যন্ত্রণা হয় না।"
+        : "Laser lithotripsy is a minimally invasive procedure performed under anesthesia, meaning you will not feel pain during the surgery. Post-operative discomfort is generally mild and easily managed with prescribed medication."
     }
   ];
 
@@ -34,10 +56,10 @@ export function FAQ() {
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h4 className="text-amber-500 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3">
-            FAQ
+            {t.faq.tag}
           </h4>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#044c3c] mb-6">
-            Frequently Asked Questions
+            {t.faq.title}
           </h2>
           
           <div className="flex items-center justify-center gap-2">

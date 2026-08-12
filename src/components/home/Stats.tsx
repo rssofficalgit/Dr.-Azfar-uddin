@@ -1,24 +1,27 @@
 import { ShieldCheck, Users, BookOpen } from 'lucide-react';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function Stats() {
+  const { t } = useLanguage();
+
   const stats = [
     {
       id: 1,
       icon: ShieldCheck,
       value: "26+",
-      label: "Years of Experience"
+      label: t.stats.experience
     },
     {
       id: 2,
       icon: Users,
       value: "70,000+",
-      label: "Patients Served"
+      label: t.stats.patients
     },
     {
       id: 3,
       icon: BookOpen,
       value: "12+",
-      label: "Journals & Publications"
+      label: t.stats.journals
     }
   ];
 

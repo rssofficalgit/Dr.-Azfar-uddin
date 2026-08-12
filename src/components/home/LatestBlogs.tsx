@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { blogs } from '../../data/blogs';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function LatestBlogs() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-16 lg:py-24 bg-slate-50/50">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
@@ -11,14 +14,14 @@ export function LatestBlogs() {
           <div className="max-w-2xl">
             <h4 className="text-amber-500 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3 flex items-center gap-2">
               <span className="w-8 h-0.5 bg-amber-500"></span>
-              Our Blog
+              {t.blogs.tag}
             </h4>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#044c3c]">
-              Latest Medical Insights
+              {t.blogs.title}
             </h2>
           </div>
           <Link to="/blog" className="hidden md:flex items-center gap-2 text-[#044c3c] font-bold hover:text-amber-500 transition-colors group">
-            View All Posts
+            {t.blogs.viewAll}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -53,7 +56,7 @@ export function LatestBlogs() {
                   {blog.excerpt}
                 </p>
                 <Link to={`/blog/${blog.id}`} className="inline-flex items-center gap-2 text-[#044c3c] font-bold hover:text-amber-500 transition-colors mt-auto text-sm">
-                  Read Full Article
+                  {t.blogs.readMore}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -64,7 +67,7 @@ export function LatestBlogs() {
 
         <div className="mt-10 md:hidden flex justify-center">
           <Link to="/blog" className="bg-white border-2 border-[#044c3c] text-[#044c3c] px-6 py-3 rounded-full font-bold flex items-center gap-2 text-sm">
-            View All Posts
+            {t.blogs.viewAll}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

@@ -1,11 +1,33 @@
 import { useState } from 'react';
 import { Calendar, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { useLanguage } from '../../hooks/useLanguage';
+
+const BDFlag = () => (
+  <svg className="w-5 h-3.5 rounded-[2px] shadow-2xs flex-shrink-0" viewBox="0 0 20 14" fill="none">
+    <rect width="20" height="14" rx="2" fill="#006A4E" />
+    <circle cx="9" cy="7" r="4" fill="#F42A41" />
+  </svg>
+);
+
+const USFlag = () => (
+  <svg className="w-5 h-3.5 rounded-[2px] shadow-2xs flex-shrink-0" viewBox="0 0 20 14" fill="none">
+    <rect width="20" height="14" rx="2" fill="white" />
+    <path d="M0 0H20V2H0V0ZM0 4H20V6H0V4ZM0 8H20V10H0V8ZM0 12H20V14H0V12Z" fill="#B22234" />
+    <rect width="9" height="8" fill="#3C3B6E" />
+    <circle cx="2" cy="2" r="0.5" fill="white" />
+    <circle cx="7" cy="2" r="0.5" fill="white" />
+    <circle cx="4.5" cy="4" r="0.5" fill="white" />
+    <circle cx="2" cy="6" r="0.5" fill="white" />
+    <circle cx="7" cy="6" r="0.5" fill="white" />
+  </svg>
+);
 
 export function Header() {
   const location = useLocation();
   const currentPath = location.pathname;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
@@ -24,30 +46,65 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-2">
-          <Link to="/" className={`font-medium px-5 py-2 rounded-md transition-colors ${currentPath === '/' ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-[#044c3c]'}`}>
-            Home
+          <Link to="/" className={`font-medium px-4 py-2 rounded-md transition-colors ${currentPath === '/' ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-[#044c3c]'}`}>
+            {t.nav.home}
           </Link>
-          <Link to="/about" className={`font-medium px-5 py-2 rounded-md transition-colors ${currentPath === '/about' ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-[#044c3c]'}`}>
-            About
+          <Link to="/about" className={`font-medium px-4 py-2 rounded-md transition-colors ${currentPath === '/about' ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-[#044c3c]'}`}>
+            {t.nav.about}
           </Link>
-          <Link to="/blog" className={`font-medium px-5 py-2 rounded-md transition-colors ${currentPath === '/blog' ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-[#044c3c]'}`}>
-            Blog & Social
+          <Link to="/blog" className={`font-medium px-4 py-2 rounded-md transition-colors ${currentPath === '/blog' ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-[#044c3c]'}`}>
+            {t.nav.blog}
           </Link>
-          <Link to="/contact" className={`font-medium px-5 py-2 rounded-md transition-colors ${currentPath === '/contact' ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-[#044c3c]'}`}>
-            Contact Us
+          <Link to="/contact" className={`font-medium px-4 py-2 rounded-md transition-colors ${currentPath === '/contact' ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-[#044c3c]'}`}>
+            {t.nav.contact}
           </Link>
         </nav>
 
-        {/* Action Button */}
-        <div className="hidden lg:flex items-center">
-          <button className="flex items-center space-x-2 border-2 border-[#044c3c] text-[#044c3c] hover:bg-[#044c3c] hover:text-white transition-colors font-bold px-6 py-2.5 rounded-md">
-            <Calendar className="w-5 h-5" />
-            <span>Book Appointment</span>
+        {/* Action Button & Language Switcher */}
+        <div className="hidden lg:flex items-center space-x-3">
+          <Link to="/contact" className="flex items-center space-x-2 border-2 border-[#044c3c] text-[#044c3c] hover:bg-[#044c3c] hover:text-white transition-colors font-bold px-5 py-2 rounded-md text-sm">
+            <Calendar className="w-4 h-4" />
+            <span>{t.nav.bookAppointment}</span>
+          </Link>
+
+          {/* Language Toggle Button with Flags */}
+          <button 
+            onClick={toggleLanguage}
+            className="flex items-center gap-1 bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all font-bold p-1 rounded-xl text-sm border border-slate-200 shadow-sm cursor-pointer"
+            title="Switch Language / ভাষা পরিবর্তন করুন"
+          >
+            <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-all ${language === 'bn' ? 'bg-white text-[#044c3c] shadow-sm font-black' : 'text-slate-500 hover:text-slate-700'}`}>
+              <BDFlag />
+              <span className="font-extrabold text-xs">বাংলা</span>
+            </div>
+            <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-all ${language === 'en' ? 'bg-white text-[#044c3c] shadow-sm font-black' : 'text-slate-500 hover:text-slate-700'}`}>
+              <USFlag />
+              <span className="font-extrabold text-xs">EN</span>
+            </div>
           </button>
         </div>
 
-        {/* Mobile Menu Button (Hamburger) */}
-        <div className="lg:hidden flex items-center">
+        {/* Mobile Action Controls */}
+        <div className="lg:hidden flex items-center space-x-2">
+          {/* Mobile Language Button with Flag */}
+          <button 
+            onClick={toggleLanguage}
+            className="flex items-center gap-1.5 bg-slate-100 text-slate-800 font-extrabold px-3 py-1.5 rounded-lg text-xs border border-slate-200 shadow-xs cursor-pointer"
+          >
+            {language === 'en' ? (
+              <>
+                <BDFlag />
+                <span>বাংলা</span>
+              </>
+            ) : (
+              <>
+                <USFlag />
+                <span>EN</span>
+              </>
+            )}
+          </button>
+
+          {/* Hamburger Menu Button */}
           <button onClick={toggleMobileMenu} className="p-2 text-slate-800 hover:text-[#044c3c] transition-colors">
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -63,34 +120,38 @@ export function Header() {
             onClick={closeMobileMenu}
             className={`font-medium text-lg ${currentPath === '/' ? 'text-amber-500 font-bold' : 'text-slate-800'}`}
           >
-            Home
+            {t.nav.home}
           </Link>
           <Link 
             to="/about" 
             onClick={closeMobileMenu}
             className={`font-medium text-lg ${currentPath === '/about' ? 'text-amber-500 font-bold' : 'text-slate-800'}`}
           >
-            About
+            {t.nav.about}
           </Link>
           <Link 
             to="/blog" 
             onClick={closeMobileMenu}
             className={`font-medium text-lg ${currentPath === '/blog' ? 'text-amber-500 font-bold' : 'text-slate-800'}`}
           >
-            Blog & Social
+            {t.nav.blog}
           </Link>
           <Link 
             to="/contact" 
             onClick={closeMobileMenu}
             className={`font-medium text-lg ${currentPath === '/contact' ? 'text-amber-500 font-bold' : 'text-slate-800'}`}
           >
-            Contact Us
+            {t.nav.contact}
           </Link>
           <hr className="border-slate-100 my-2" />
-          <button className="w-full flex items-center justify-center space-x-2 bg-[#044c3c] text-white transition-colors font-bold px-6 py-3 rounded-md">
+          <Link 
+            to="/contact" 
+            onClick={closeMobileMenu}
+            className="w-full flex items-center justify-center space-x-2 bg-[#044c3c] text-white transition-colors font-bold px-6 py-3 rounded-md"
+          >
             <Calendar className="w-5 h-5" />
-            <span>Book Appointment</span>
-          </button>
+            <span>{t.nav.bookAppointment}</span>
+          </Link>
         </div>
       )}
     </header>

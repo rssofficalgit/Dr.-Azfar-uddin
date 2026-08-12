@@ -1,34 +1,43 @@
 import { MapPin, Phone, Clock } from 'lucide-react';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function Chambers() {
+  const { t, language } = useLanguage();
+
   const chambers = [
     {
-      title: "AZFAR UROLOGY, ANDROLOGY, MICROSURGERY & MALE INFERTILITY CENTER",
-      address: "Room No: 456, Anwer Khan Modern Medical College, Road: 8, House: 17, Dhanmondi, Dhaka.",
+      title: t.chambers.hospitalTitle,
+      address: language === 'bn' 
+        ? "কক্ষ নং: ৪৫৬, আনোয়ার খান মডার্ন মেডিকেল কলেজ হাসপাতাল, রোড: ৮, হাউস: ১৭, ধানমন্ডি, ঢাকা।"
+        : "Room No: 456, Anwer Khan Modern Medical College, Road: 8, House: 17, Dhanmondi, Dhaka.",
       mapQuery: "Anwer Khan Modern Medical College, Dhaka",
       visitingHours: {
-        days: "Saturday to Thursday",
-        time: "9:00 AM - 2:00 PM",
-        note: "(Friday Closed)"
+        days: language === 'bn' ? "শনিবার থেকে বৃহস্পতিবার" : "Saturday to Thursday",
+        time: language === 'bn' ? "সকাল ৯:০০ - দুপুর ২:০০" : "9:00 AM - 2:00 PM",
+        note: t.chambers.closed
       },
       phones: ["01754995671", "01892760031", "01731457460"]
     },
     {
-      title: "AZFAR UROLOGY, ANDROLOGY, MICROSURGERY & MALE INFERTILITY CENTER",
-      address: "Room No: 201, Central Hospital Ltd.",
+      title: t.chambers.hospitalTitle,
+      address: language === 'bn'
+        ? "কক্ষ নং: ২০১, সেন্ট্রাল হাসপাতাল লিঃ, গ্রিন রোড, ধানমন্ডি, ঢাকা।"
+        : "Room No: 201, Central Hospital Ltd., Green Road, Dhanmondi, Dhaka.",
       mapQuery: "Central Hospital Ltd, Green Road, Dhaka",
       visitingHours: {
-        days: "Saturday to Thursday",
-        time: "7:00 PM - 9:00 PM",
-        note: "(Friday Closed)"
+        days: language === 'bn' ? "শনিবার থেকে বৃহস্পতিবার" : "Saturday to Thursday",
+        time: language === 'bn' ? "সন্ধ্যা ৭:০০ - রাত ৯:০০" : "7:00 PM - 9:00 PM",
+        note: t.chambers.closed
       },
       phones: ["01766316179", "01611885497", "01731457460"]
     },
     {
-      title: "AZFAR UROLOGY, ANDROLOGY, MICROSURGERY & MALE INFERTILITY CENTER (OFFICE)",
-      subtitle: "The only complete male infertility treatment center in Bangladesh",
-      address: "House: 17/1, Road: 5, Dhanmondi, Dhaka-1205",
-      mapQuery: "Road No. 5, Dhanmondi, Dhaka",
+      title: t.chambers.officeTitle,
+      subtitle: t.chambers.officeSubtitle,
+      address: language === 'bn'
+        ? "এসইএল কবির সেন্টার (৯ম তলা), হাউস ২/এ, রোড ৮, গ্রিন রোড, ধানমন্ডি, ঢাকা।"
+        : "SEL Kabir Center 9th floor House 2/A Road 8 GreenRoad dhanmondi Dhaka",
+      mapQuery: "SEL Kabir Center, Green Road, Dhanmondi, Dhaka",
       phones: ["01758075656", "01731457460"]
     }
   ];
@@ -44,10 +53,10 @@ export function Chambers() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h4 className="text-amber-500 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3">
-            Our Locations
+            {t.chambers.tag}
           </h4>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#044c3c] mb-6">
-            Visit Our Chambers
+            {t.chambers.title}
           </h2>
           
           <div className="flex items-center justify-center gap-2">
@@ -130,7 +139,7 @@ export function Chambers() {
                   </div>
                   <div className="flex flex-col pt-0.5">
                     <div className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-1">
-                      Appointment Booking
+                      {t.chambers.callForAppointment}
                     </div>
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                       {chamber.phones.map((phone, i) => (

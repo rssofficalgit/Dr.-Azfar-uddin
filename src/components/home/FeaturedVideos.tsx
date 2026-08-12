@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Youtube } from 'lucide-react';
+import { useLanguage } from '../../hooks/useLanguage';
 
 function HomeVideoCard({ videoId }: { videoId: string }) {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -45,6 +46,8 @@ function HomeVideoCard({ videoId }: { videoId: string }) {
 }
 
 export function FeaturedVideos() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
       
@@ -57,17 +60,17 @@ export function FeaturedVideos() {
           <div className="max-w-2xl">
             <h4 className="text-rose-500 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3 flex items-center gap-2">
               <Youtube className="w-5 h-5" />
-              Featured Videos
+              {t.videos.tag}
             </h4>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#044c3c]">
-              Watch & Learn
+              {t.videos.title}
             </h2>
           </div>
           <Link 
             to="/blog#video-gallery" 
             className="hidden md:flex items-center gap-2 text-rose-500 font-bold hover:text-rose-600 transition-colors group"
           >
-            Watch All Videos
+            {t.videos.viewAllVideos}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -84,7 +87,7 @@ export function FeaturedVideos() {
             to="/blog#video-gallery" 
             className="bg-white border-2 border-rose-500 text-rose-500 px-6 py-3 rounded-full font-bold flex items-center gap-2 text-sm hover:bg-rose-50 transition-colors"
           >
-            Watch All Videos
+            {t.videos.viewAllVideos}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

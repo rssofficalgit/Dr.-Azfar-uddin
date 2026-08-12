@@ -1,23 +1,32 @@
 import { Star, Quote } from 'lucide-react';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function Testimonials() {
+  const { t, language } = useLanguage();
+
   const testimonials = [
     {
-      name: "Ahmed Kabir",
-      type: "Patient",
-      text: "Prof. Dr. Azfar is incredibly knowledgeable and compassionate. His detailed explanation of my condition and the successful microsurgery completely changed my life. Highly recommended!",
+      name: language === 'bn' ? "আহমেদ কবীর" : "Ahmed Kabir",
+      type: language === 'bn' ? "সম্মানিত রোগী" : "Patient",
+      text: language === 'bn'
+        ? "প্রফেসর ডা. আজফার অত্যন্ত অভিজ্ঞ এবং দায়িত্বশীল চিকিৎসক। ওনার সফল মাইক্রোসার্জারিতে আমি সম্পূর্ণ সুস্থ। আন্তরিক ধন্যবাদ!"
+        : "Prof. Dr. Azfar is incredibly knowledgeable and compassionate. His detailed explanation of my condition and the successful microsurgery completely changed my life. Highly recommended!",
       rating: 5
     },
     {
-      name: "Syed Rahman",
-      type: "Patient",
-      text: "I was suffering from chronic kidney stones for years before I visited him. The treatment was advanced, and the care I received at the clinic was world-class. Thank you so much.",
+      name: language === 'bn' ? "সৈয়দ রহমান" : "Syed Rahman",
+      type: language === 'bn' ? "সম্মানিত রোগী" : "Patient",
+      text: language === 'bn'
+        ? "দীঘদিন ধরে কিডনি পাথরের সমস্যায় ভুগছিলাম। স্যারের কাছে চিকিৎসা নেওয়ার পর বিনা কাটে লেজার প্রযুক্তিতে পাথর অপসারণ করা হয়। উনি অনেক যত্নশীল।"
+        : "I was suffering from chronic kidney stones for years before I visited him. The treatment was advanced, and the care I received at the clinic was world-class. Thank you so much.",
       rating: 5
     },
     {
-      name: "Tanvir Hossain",
-      type: "Patient",
-      text: "Finding a specialist with such an impressive international background in Bangladesh is rare. He handled my complex case with utmost professionalism and care.",
+      name: language === 'bn' ? "তানভীর হোসেন" : "Tanvir Hossain",
+      type: language === 'bn' ? "সম্মানিত রোগী" : "Patient",
+      text: language === 'bn'
+        ? "বাংলাদেশে এমন আন্তর্জাতিক মানের অভিজ্ঞ সার্জন পাওয়া সত্যিই বিরল। আমার জটিল মেল ইনফার্টিলিটি কেসটি উনি অত্যন্ত পেশাদারিত্ব ও আন্তরিকতার সাথে সমাধান করেছেন।"
+        : "Finding a specialist with such an impressive international background in Bangladesh is rare. He handled my complex case with utmost professionalism and care.",
       rating: 5
     }
   ];
@@ -34,10 +43,10 @@ export function Testimonials() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20">
           <h4 className="text-amber-500 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3">
-            Patient Stories
+            {t.testimonials.tag}
           </h4>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#044c3c] mb-6">
-            What Our Patients Say
+            {t.testimonials.title}
           </h2>
           
           <div className="flex items-center justify-center gap-2">

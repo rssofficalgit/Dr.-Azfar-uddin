@@ -1,19 +1,23 @@
 import { ArrowRight, Activity, Microscope, Droplets, Brain, Stethoscope, ShieldPlus, Scissors, Baby, ActivitySquare, User, HeartPulse, Bot } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function Services() {
+  const { t } = useLanguage();
+
   const services = [
-    { title: "Andrology", icon: Activity, desc: "Male reproductive health" },
-    { title: "Microsurgery", icon: Microscope, desc: "Precision surgical techniques" },
-    { title: "Kidney Stone", icon: Droplets, desc: "Advanced removal options" },
-    { title: "Neuro-Urology", icon: Brain, desc: "Nervous system urology" },
-    { title: "Endourology", icon: Stethoscope, desc: "Minimally invasive care" },
-    { title: "Uro Oncology", icon: ShieldPlus, desc: "Urological cancer care" },
-    { title: "Reconstructive", icon: Scissors, desc: "Restoring normal function" },
-    { title: "Pediatric Urology", icon: Baby, desc: "Specialized care for children" },
-    { title: "Male Infertility", icon: ActivitySquare, desc: "Comprehensive solutions" },
-    { title: "Female Urology", icon: User, desc: "Specialized female care" },
-    { title: "General Urology", icon: HeartPulse, desc: "Complete urological health" },
-    { title: "Robotic Surgery", icon: Bot, desc: "Advanced laparoscopy" }
+    { title: t.services.items.andrologyTitle, icon: Activity, desc: t.services.items.andrologyDesc },
+    { title: t.services.items.microsurgeryTitle, icon: Microscope, desc: t.services.items.microsurgeryDesc },
+    { title: t.services.items.kidneyStoneTitle, icon: Droplets, desc: t.services.items.kidneyStoneDesc },
+    { title: t.services.items.prostateTitle, icon: Brain, desc: t.services.items.prostateDesc },
+    { title: t.services.items.varicocelectomyTitle, icon: Stethoscope, desc: t.services.items.varicocelectomyDesc },
+    { title: t.services.items.urologicOncologyTitle, icon: ShieldPlus, desc: t.services.items.urologicOncologyDesc },
+    { title: t.services.items.strictureTitle, icon: Scissors, desc: t.services.items.strictureDesc },
+    { title: t.services.items.pediatricTitle, icon: Baby, desc: t.services.items.pediatricDesc },
+    { title: t.services.items.maleInfertilityTitle, icon: ActivitySquare, desc: t.services.items.maleInfertilityDesc },
+    { title: t.services.items.urinaryTractTitle, icon: User, desc: t.services.items.urinaryTractDesc },
+    { title: t.services.items.circumcisionTitle, icon: HeartPulse, desc: t.services.items.circumcisionDesc },
+    { title: t.services.items.laparoscopicTitle, icon: Bot, desc: t.services.items.laparoscopicDesc }
   ];
 
   return (
@@ -29,14 +33,14 @@ export function Services() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h4 className="text-amber-500 font-extrabold text-xs sm:text-sm uppercase tracking-widest mb-4 flex items-center justify-center gap-3">
             <span className="w-8 h-0.5 bg-amber-500"></span>
-            Our Expertise
+            {t.services.tag}
             <span className="w-8 h-0.5 bg-amber-500"></span>
           </h4>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-[#044c3c] mb-6 leading-tight">
-            Comprehensive <br className="hidden sm:block" /> Urology Care
+            {t.services.title}
           </h2>
           <p className="text-slate-500 text-base sm:text-lg max-w-2xl mx-auto">
-            Delivering state-of-the-art medical and surgical treatments with precision, compassion, and the highest standard of excellence.
+            {t.services.subtitle}
           </p>
         </div>
 
@@ -75,10 +79,10 @@ export function Services() {
 
         {/* CTA Button */}
         <div className="mt-16 flex justify-center">
-          <button className="group bg-white border-2 border-[#044c3c] text-[#044c3c] hover:bg-[#044c3c] hover:text-white transition-all duration-300 px-8 py-4 rounded-xl font-bold flex items-center gap-3 text-sm sm:text-base shadow-sm hover:shadow-lg hover:-translate-y-1">
-            <span>Explore All Services</span>
+          <Link to="/contact" className="group bg-white border-2 border-[#044c3c] text-[#044c3c] hover:bg-[#044c3c] hover:text-white transition-all duration-300 px-8 py-4 rounded-xl font-bold flex items-center gap-3 text-sm sm:text-base shadow-sm hover:shadow-lg hover:-translate-y-1">
+            <span>{t.banner.button}</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
         </div>
 
       </div>

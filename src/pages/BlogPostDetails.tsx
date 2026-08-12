@@ -2,8 +2,10 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Share2, Facebook, Twitter, Linkedin, Link2, Check } from 'lucide-react';
 import { blogs } from '../data/blogs';
 import { useEffect, useState } from 'react';
+import { useLanguage } from '../hooks/useLanguage';
 
 export function BlogPostDetails() {
+  const { language } = useLanguage();
   const [copied, setCopied] = useState(false);
   const { id } = useParams<{ id: string }>();
   const currentIndex = blogs.findIndex(b => b.id === id);
@@ -52,7 +54,7 @@ export function BlogPostDetails() {
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl relative z-10">
           <Link to="/blog" className="inline-flex items-center gap-2 text-emerald-400 hover:text-amber-400 font-medium transition-colors mb-8 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-            Back to all blogs
+            {language === 'bn' ? "সকল ব্লগে ফিরে যান" : "Back to all blogs"}
           </Link>
           
           <div className="flex items-center gap-3 mb-6 flex-wrap">

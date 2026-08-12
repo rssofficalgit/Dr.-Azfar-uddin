@@ -1,6 +1,9 @@
 import { GraduationCap, Briefcase, Globe, Award, CheckCircle2, MapPin } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
 export function AboutPage() {
+  const { t, language } = useLanguage();
+
   return (
     <div className="w-full bg-slate-50/50">
       
@@ -25,19 +28,19 @@ export function AboutPage() {
             {/* Text Side */}
             <div className="w-full lg:w-3/5 text-center lg:text-left">
               <h4 className="text-amber-400 font-extrabold text-xs sm:text-sm uppercase tracking-widest mb-4">
-                Urologist & Microsurgeon
+                {t.aboutPage.heroSub}
               </h4>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-                Prof. Dr. Azfar <br className="hidden lg:block"/> Uddin Shaikh
+                {t.about.name}
               </h1>
               <p className="text-emerald-100/90 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Welcome to the official website of a distinguished medical professional. With a career spanning several decades, Prof. Dr. Azfar Uddin Shaikh is recognized as a leading Urological Microsurgeon globally.
+                {t.about.p1}
               </p>
               
               <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4">
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2.5 flex items-center gap-2">
                   <Award className="w-5 h-5 text-amber-400" />
-                  <span className="text-white font-medium text-sm">Global Top Varicocelectomy Performer</span>
+                  <span className="text-white font-medium text-sm">{t.aboutPage.topBadge}</span>
                 </div>
               </div>
             </div>
@@ -50,10 +53,12 @@ export function AboutPage() {
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
           <QuoteIcon />
           <p className="text-slate-600 text-lg lg:text-xl leading-relaxed italic mb-8">
-            "As a urologist, I have carried forward a legacy of significant roles and responsibilities in the healthcare profession. My mission is to advance urology in Bangladesh by continuously integrating innovative techniques and international standards of care."
+            {language === 'bn' 
+              ? `"একজন ইউরোলজিস্ট হিসেবে আমি চিকিৎসা পেশায় গুরুত্বপূর্ণ ভূমিকা পালন করে আসছি। আমার লক্ষ্য আন্তর্জাতিক মানের চিকিৎসা ও উদ্ভাবনী প্রযুক্তি যুক্ত করে বাংলাদেশে ইউরোলজি ও মেল ইনফার্টিলিটি চিকিৎসাকে আরও এগিয়ে নিয়ে যাওয়া।"`
+              : `"As a urologist, I have carried forward a legacy of significant roles and responsibilities in the healthcare profession. My mission is to advance urology in Bangladesh by continuously integrating innovative techniques and international standards of care."`}
           </p>
           <p className="text-slate-500">
-            For his innovative contributions in the field of urology, he has received multiple awards and honors. He has also been working for many years with urologists from the United States to advance urology in Bangladesh.
+            {t.about.p2}
           </p>
         </div>
       </section>

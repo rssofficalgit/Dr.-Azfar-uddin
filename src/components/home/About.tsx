@@ -1,12 +1,15 @@
 import { ArrowRight, Award, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function About() {
+  const { t } = useLanguage();
+
   const credentials = [
-    "American Board Certified",
-    "Fellow of American College of Surgeons",
-    "Advanced Training in USA & Europe",
-    "International Conference Speaker"
+    t.hero.features[0],
+    t.hero.features[1],
+    t.hero.features[2],
+    t.hero.features[3]
   ];
 
   return (
@@ -29,7 +32,7 @@ export function About() {
             {/* Floating Experience Badge */}
             <div className="absolute -bottom-6 -right-6 lg:-right-8 bg-white p-5 rounded-2xl shadow-xl flex items-center gap-4 z-20 border border-slate-100 animate-bounce-slow">
               <div className="text-4xl font-black text-[#044c3c]">26<span className="text-amber-500">+</span></div>
-              <div className="text-xs font-bold text-slate-500 leading-tight tracking-wider uppercase">Years<br/>Experience</div>
+              <div className="text-xs font-bold text-slate-500 leading-tight tracking-wider uppercase">{t.about.yearsExp}</div>
             </div>
           </div>
 
@@ -37,28 +40,28 @@ export function About() {
           <div className="lg:col-span-5 flex flex-col justify-center py-6 lg:px-10 mt-8 lg:mt-0">
             <h4 className="text-amber-500 font-extrabold text-xs sm:text-sm uppercase tracking-widest flex items-center gap-2">
               <span className="w-8 h-0.5 bg-amber-500"></span>
-              Meet Our Specialist
+              {t.about.badge}
             </h4>
             
             <h2 className="text-4xl sm:text-5xl font-extrabold text-[#044c3c] mt-5 leading-tight">
-              Prof. Dr. Azfar Uddin <br/> Shaikh
+              {t.about.name}
             </h2>
             
             <h3 className="text-base sm:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-amber-500 mt-3">
-              MBBS, FCPS (Urology), MCh (Urology), FACS (USA)
+              {t.about.degrees}
             </h3>
             
             <div className="w-12 h-1 bg-emerald-100 mt-6 rounded-full"></div>
 
             <p className="text-slate-600 mt-6 leading-relaxed text-sm sm:text-base">
-              Renowned Urologist, Andrologist & Microsurgeon dedicated to providing advanced, ethical and compassionate care for all urological and male fertility concerns. He is the pioneer of comprehensive male infertility treatment in Bangladesh.
+              {t.about.p1}
             </p>
             
             <Link 
               to="/about"
               className="group mt-10 bg-[#044c3c] hover:bg-[#033b2e] transition-all duration-300 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-3 w-fit text-sm shadow-[0_8px_20px_rgb(4,76,60,0.2)] hover:shadow-[0_8px_25px_rgb(4,76,60,0.3)] hover:-translate-y-1"
             >
-              <span>View Full Profile</span>
+              <span>{t.about.readBio}</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -78,7 +81,7 @@ export function About() {
                 <div className="flex flex-col gap-6">
                   {credentials.map((cred, i) => (
                     <div key={i} className="flex items-start gap-4">
-                      <div className="mt-1 bg-emerald-800/50 p-1.5 rounded-full">
+                      <div className="mt-1 bg-emerald-800/50 p-1.5 rounded-full flex-shrink-0">
                         <ChevronRight className="w-3 h-3 text-amber-400" strokeWidth={4} />
                       </div>
                       <span className="text-emerald-50 font-medium text-sm leading-snug">

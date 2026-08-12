@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { blogs } from '../data/blogs';
+import { useLanguage } from '../hooks/useLanguage';
 
 function VideoCard({ videoId, index }: { videoId: string; index: number }) {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -45,6 +46,8 @@ function VideoCard({ videoId, index }: { videoId: string; index: number }) {
 }
 
 export function BlogPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="w-full bg-slate-50/50 min-h-screen">
       
@@ -55,13 +58,13 @@ export function BlogPage() {
 
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10 text-center">
           <h4 className="text-amber-400 font-extrabold text-xs sm:text-sm uppercase tracking-widest mb-4">
-            Stay Updated
+            {t.blogs.tag}
           </h4>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-            Blog & Social Content
+            {t.blogs.title}
           </h1>
           <p className="text-emerald-100/90 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-            Discover the latest news, medical insights, patient stories, and our social media updates right here.
+            {t.blogs.subtitle}
           </p>
         </div>
       </section>
@@ -100,7 +103,7 @@ export function BlogPage() {
                     {blog.excerpt}
                   </p>
                   <Link to={`/blog/${blog.id}`} className="inline-flex items-center gap-2 text-[#044c3c] font-bold hover:text-amber-500 transition-colors mt-auto text-sm">
-                    Read Full Article
+                    {t.blogs.readMore}
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>

@@ -1,6 +1,10 @@
 import { Star, CheckCircle2, Calendar, ArrowRight, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative w-full overflow-hidden bg-slate-50/30 py-12 lg:py-20">
       {/* Premium Animated Background Layers */}
@@ -21,48 +25,44 @@ export function Hero() {
               <span className="flex h-5 w-5 rounded-full bg-amber-100 items-center justify-center">
                 <Star className="w-3 h-3 fill-amber-500 text-amber-500" />
               </span>
-              <span className="text-amber-600 text-xs font-extrabold tracking-widest uppercase">Bangladesh's Leading Urologist</span>
+              <span className="text-amber-600 text-xs font-extrabold tracking-widest uppercase">{t.hero.badge}</span>
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-slate-900 mb-6">
-              Expert Care for <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#044c3c] to-emerald-500">Urology, Andrology & </span>
-              <br className="hidden sm:block" />
-              Male Fertility
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.15] tracking-tight text-slate-900 mb-3">
+              {t.hero.title}
             </h1>
+            <div className="text-xl sm:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#044c3c] to-emerald-600 mb-6">
+              {t.hero.subtitle}
+            </div>
 
             {/* Description */}
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-8">
-              Experience world-class urological care equipped with advanced technology, unparalleled compassion, and expertise you can trust for your most sensitive health needs.
+              {t.hero.description}
             </p>
 
             {/* Features List */}
             <ul className="space-y-4 mb-10">
-              {[
-                "American Board Certified Urologist",
-                "Advanced Microsurgery & Endourology Specialist",
-                "Reconstructive Urology & Male Infertility Expert"
-              ].map((item, i) => (
-                <li key={i} className="flex items-center gap-4 text-slate-800 font-semibold text-sm sm:text-base group">
-                  <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center flex-shrink-0 group-hover:bg-[#044c3c] transition-colors duration-300">
+              {t.hero.features.map((item, i) => (
+                <li key={i} className="flex items-start gap-4 text-slate-800 font-semibold text-sm sm:text-base group">
+                  <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center flex-shrink-0 group-hover:bg-[#044c3c] transition-colors duration-300 mt-0.5">
                     <CheckCircle2 className="w-4 h-4 text-[#044c3c] group-hover:text-white transition-colors" />
                   </div>
-                  <span>{item}</span>
+                  <span className="leading-snug">{item}</span>
                 </li>
               ))}
             </ul>
 
             {/* Premium Buttons */}
             <div className="flex flex-wrap items-center gap-4">
-              <button className="group flex items-center gap-3 bg-[#044c3c] hover:bg-[#033b2e] transition-all duration-300 text-white px-8 py-4 rounded-xl font-bold text-sm sm:text-base shadow-[0_8px_20px_rgb(4,76,60,0.2)] hover:shadow-[0_8px_25px_rgb(4,76,60,0.3)] hover:-translate-y-0.5">
-                <span>Book Appointment</span>
+              <Link to="/contact" className="group flex items-center gap-3 bg-[#044c3c] hover:bg-[#033b2e] transition-all duration-300 text-white px-8 py-4 rounded-xl font-bold text-sm sm:text-base shadow-[0_8px_20px_rgb(4,76,60,0.2)] hover:shadow-[0_8px_25px_rgb(4,76,60,0.3)] hover:-translate-y-0.5">
+                <span>{t.hero.bookButton}</span>
                 <Calendar className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-              </button>
-              <button className="group flex items-center gap-3 bg-white border-2 border-slate-100 text-slate-700 hover:border-[#044c3c] hover:text-[#044c3c] transition-all duration-300 px-8 py-4 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md hover:-translate-y-0.5">
-                <span>Learn More</span>
+              </Link>
+              <Link to="/about" className="group flex items-center gap-3 bg-white border-2 border-slate-100 text-slate-700 hover:border-[#044c3c] hover:text-[#044c3c] transition-all duration-300 px-8 py-4 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                <span>{t.hero.learnMoreButton}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -87,8 +87,6 @@ export function Hero() {
                 className="relative z-10 w-full max-w-[340px] sm:max-w-[440px] lg:max-w-[500px] h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)] object-contain object-bottom scale-105"
               />
 
-
-
               {/* Floating Experience Badge - Right */}
               <div className="absolute top-32 right-0 sm:-right-8 bg-white/95 backdrop-blur-md px-5 py-4 rounded-2xl shadow-xl flex flex-col items-center gap-1 z-20 border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
                 <div className="text-amber-500 mb-1">
@@ -98,7 +96,7 @@ export function Hero() {
                   26+
                 </div>
                 <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider text-center">
-                  Years of<br />Excellence
+                  {t.hero.yearsExcellence}
                 </div>
               </div>
 

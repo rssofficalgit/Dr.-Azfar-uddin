@@ -3,7 +3,13 @@
 @theme {
   --color-primary: #DCA745;
   --color-primary-hover: #c6943c;
-  --font-sans: "Lato", sans-serif;
+  --font-sans: "Lato", "Noto Serif Bengali", serif;
+  --font-bn: "Noto Serif Bengali", serif;
+}
+
+html[lang="bn"] body,
+[lang="bn"] {
+  font-family: "Noto Serif Bengali", "Lato", serif;
 }
 
 body {
