@@ -1,4 +1,4 @@
-import { Star, CheckCircle2, Calendar, ArrowRight, Phone, Award } from 'lucide-react';
+import { Star, CheckCircle2, Calendar, ArrowRight, Award } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -83,28 +83,11 @@ export function Hero() {
               {/* Doctor Image */}
               <img 
                 src="/Image-Azfar.png" 
-                alt="Dr Azfar Uddin Shaikh" 
+                alt="Prof. Dr. Azfar Uddin Shaikh" 
                 className="relative z-10 w-full max-w-[340px] sm:max-w-[440px] lg:max-w-[500px] h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)] object-contain object-bottom scale-105"
               />
 
-              {/* Floating Contact Card - Left */}
-              <div className="absolute -bottom-6 left-0 sm:-left-10 bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl shadow-xl flex items-center gap-4 z-20 border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
-                <div className="bg-amber-100 text-amber-600 p-3 sm:p-3.5 rounded-full flex-shrink-0 shadow-inner">
-                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 fill-current" />
-                </div>
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-2">
-                    <div className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                    </div>
-                    <span className="text-[10px] font-extrabold text-slate-500 tracking-wider">CONSULT NOW</span>
-                  </div>
-                  <div className="text-base sm:text-xl font-extrabold text-[#044c3c] leading-tight mt-1">
-                    01754 995 671
-                  </div>
-                </div>
-              </div>
+
 
               {/* Floating Experience Badge - Right */}
               <div className="absolute top-32 right-0 sm:-right-8 bg-white/95 backdrop-blur-md px-5 py-4 rounded-2xl shadow-xl flex flex-col items-center gap-1 z-20 border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
@@ -112,7 +95,7 @@ export function Hero() {
                   <Award className="w-8 h-8" strokeWidth={1.5} />
                 </div>
                 <div className="text-2xl font-extrabold text-[#044c3c] leading-none">
-                  15+
+                  26+
                 </div>
                 <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider text-center">
                   Years of<br />Excellence

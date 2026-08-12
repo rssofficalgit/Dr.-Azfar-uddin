@@ -199,6 +199,10 @@
 
 ## 13. Change Log
 
+* **2026-08-12:** Added `Prof.` prefix before `Dr. Azfar Uddin Shaikh` across all site titles, components (`About.tsx`, `Hero.tsx`, `FAQ.tsx`, `Testimonials.tsx`, `Header.tsx`, `Footer.tsx`), blog data (`blogs.ts`), assets, and `index.html`.
+* **2026-08-12:** Removed the floating contact card containing the phone number from the `Hero.tsx` section per user request.
+* **2026-08-12:** Updated years of experience across the entire website (`Stats.tsx`, `Hero.tsx`, `About.tsx`) from 15+/25+ to **26+** per user request.
+
 * **2026-08-03:** Cleaned up unused imports (`ArrowRight`, `MapPin`, `Send`) in `Chambers.tsx` and `ContactPage.tsx` to resolve all project ESLint warnings and verify clean compilation.
 * **2026-08-03:** Extracted Blog and YouTube video sections into `LatestBlogs.tsx` and `FeaturedVideos.tsx` and integrated them into `Home.tsx`. Upgraded UI/UX designs for `Hero.tsx`, `About.tsx`, `Services.tsx`, and `Chambers.tsx` on the homepage to achieve a highly premium, modern aesthetic with advanced hover animations, gradient typography, and custom icon integration.
 * **2026-08-03:** Removed the stale `.git/index.lock` file that was preventing git commands from running.

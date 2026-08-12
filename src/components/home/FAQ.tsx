@@ -19,7 +19,7 @@ export function FAQ() {
     },
     {
       question: "What are the success rates for male infertility treatments?",
-      answer: "Success rates vary depending on the specific condition and underlying causes. Dr. Azfar uses the most advanced microsurgical techniques, which significantly increase the chances of success compared to traditional methods."
+      answer: "Success rates vary depending on the specific condition and underlying causes. Prof. Dr. Azfar uses the most advanced microsurgical techniques, which significantly increase the chances of success compared to traditional methods."
     },
     {
       question: "Is kidney stone laser surgery painful?",

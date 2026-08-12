@@ -5,7 +5,7 @@ export function Testimonials() {
     {
       name: "Ahmed Kabir",
       type: "Patient",
-      text: "Dr. Azfar is incredibly knowledgeable and compassionate. His detailed explanation of my condition and the successful microsurgery completely changed my life. Highly recommended!",
+      text: "Prof. Dr. Azfar is incredibly knowledgeable and compassionate. His detailed explanation of my condition and the successful microsurgery completely changed my life. Highly recommended!",
       rating: 5
     },
     {

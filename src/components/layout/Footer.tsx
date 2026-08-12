@@ -45,7 +45,7 @@ export function Footer() {
             {/* Column 1: Brand & Bio (Spans 4 cols on large screens) */}
             <div className="lg:col-span-4 flex flex-col gap-6">
               <div className="w-56 inline-block bg-white/5 p-4 rounded-2xl border border-white/5 backdrop-blur-sm">
-                <img src="/Azfar.png" alt="Dr Azfar Logo" className="w-full h-auto" />
+                <img src="/Azfar.png" alt="Prof. Dr. Azfar Logo" className="w-full h-auto" />
               </div>
               <p className="text-emerald-100/70 text-sm leading-relaxed font-sans pr-4">
                 প্রফেসর ডা. আজফার উদ্দীন শেখ বাংলাদেশের একজন স্বনামধন্য ইউরোলজিস্ট, এন্ড্রোলজিস্ট এবং মাইক্রোসার্জন। দীর্ঘদিনের অভিজ্ঞতায় তিনি হাজারো রোগীকে সুস্থ জীবনে ফিরিয়ে এনেছেন।

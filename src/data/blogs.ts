@@ -30,7 +30,7 @@ export const blogs: BlogPost[] = [
 
 বাংলাদেশে এই আন্তর্জাতিক মানের চিকিৎসা এখন সহজলভ্য।
 
-Dr. Azfar's American Standard Urology, Andrology, Microsurgery & Male Fertility Center, Dhanmondi-তে আন্তর্জাতিক মানের যন্ত্রপাতি, আধুনিক অপারেশন থিয়েটার এবং দীর্ঘ অভিজ্ঞতার সমন্বয়ে নিয়মিত Microsurgical Varicocelectomy এবং অন্যান্য জটিল ইউরোলজিক্যাল সার্জারি করা হচ্ছে।
+Prof. Dr. Azfar's American Standard Urology, Andrology, Microsurgery & Male Fertility Center, Dhanmondi-তে আন্তর্জাতিক মানের যন্ত্রপাতি, আধুনিক অপারেশন থিয়েটার এবং দীর্ঘ অভিজ্ঞতার সমন্বয়ে নিয়মিত Microsurgical Varicocelectomy এবং অন্যান্য জটিল ইউরোলজিক্যাল সার্জারি করা হচ্ছে।
 
 উপমহাদেশের অন্যতম ব্যস্ত এবং আধুনিক এই সেন্টারে তুলনামূলক কম খরচে বিশ্বমানের চিকিৎসা প্রদান করা হয়। ফলে Varicocele কিংবা পুরুষজনিত বন্ধ্যাত্বের চিকিৎসার জন্য বিদেশে যাওয়ার প্রয়োজনীয়তা অনেকাংশেই কমে এসেছে।
 
@@ -206,7 +206,7 @@ IVF কি সমাধান?
 * MESA (Microsurgical Epididymal Sperm Aspiration)
 * MicroTESE (Microsurgical Testicular Sperm Extraction)
 
-গত কয়েক বছর ধরে বাংলাদেশে এই জটিল মাইক্রোসার্জারিগুলো নিয়মিত সফলতার সঙ্গে সম্পন্ন করা হচ্ছে Dr. Azfar's American Standard Urology, Andrology & Microsurgery Center, Dhanmondi-তে, যা উপমহাদেশের অন্যতম ব্যস্ত মাইক্রোসার্জারি সেন্টার হিসেবে পরিচিত।
+গত কয়েক বছর ধরে বাংলাদেশে এই জটিল মাইক্রোসার্জারিগুলো নিয়মিত সফলতার সঙ্গে সম্পন্ন করা হচ্ছে Prof. Dr. Azfar's American Standard Urology, Andrology & Microsurgery Center, Dhanmondi-তে, যা উপমহাদেশের অন্যতম ব্যস্ত মাইক্রোসার্জারি সেন্টার হিসেবে পরিচিত।
 
 আপনি যদি পুরুষ বন্ধ্যাত্ব, শুক্রাণুর সমস্যা বা যৌনস্বাস্থ্যের জটিলতায় ভুগে থাকেন, তাহলে যথাসময়ে একজন অভিজ্ঞ ইউরোলজিস্ট ও এন্ড্রোলজিস্টের পরামর্শ নিন।
 
@@ -264,7 +264,7 @@ IVF কি সমাধান?
 যদি পরীক্ষায় কোনো অস্বাভাবিকতা ধরা পড়ে, তাহলে অবশ্যই একজন অভিজ্ঞ Urologist & Andrologist-এর পরামর্শ নেওয়া উচিত।
 
 আমাদের বিশেষায়িত চিকিৎসা:
-Dr. Azfar's American Standard Urology, Andrology & Microsurgery Center বর্তমানে বাংলাদেশের অন্যতম বিশেষায়িত Male Fertility Center হিসেবে পরিচিত। এখানে আন্তর্জাতিক মানের Microsurgical পদ্ধতিতে পুরুষ বন্ধ্যাত্বের চিকিৎসা নিয়মিত করা হচ্ছে।
+Prof. Dr. Azfar's American Standard Urology, Andrology & Microsurgery Center বর্তমানে বাংলাদেশের অন্যতম বিশেষায়িত Male Fertility Center হিসেবে পরিচিত। এখানে আন্তর্জাতিক মানের Microsurgical পদ্ধতিতে পুরুষ বন্ধ্যাত্বের চিকিৎসা নিয়মিত করা হচ্ছে।
 
 নিয়মিত সম্পন্ন হওয়া গুরুত্বপূর্ণ মাইক্রোসার্জারিগুলোর মধ্যে রয়েছে—
 * Microsurgical Varicocelectomy

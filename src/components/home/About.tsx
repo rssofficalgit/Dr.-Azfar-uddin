@@ -23,12 +23,12 @@ export function About() {
             <div className="absolute inset-4 bg-amber-400/20 rounded-[2.5rem] transform -rotate-3 transition-transform duration-500 hover:rotate-0"></div>
             <img 
               src="/about-surgery.jpeg" 
-              alt="Dr. Azfar Uddin Shaikh performing surgery" 
+              alt="Prof. Dr. Azfar Uddin Shaikh performing surgery" 
               className="relative z-10 w-full h-[400px] lg:h-full object-cover rounded-[2rem] shadow-[0_20px_40px_rgba(0,0,0,0.15)]"
             />
             {/* Floating Experience Badge */}
             <div className="absolute -bottom-6 -right-6 lg:-right-8 bg-white p-5 rounded-2xl shadow-xl flex items-center gap-4 z-20 border border-slate-100 animate-bounce-slow">
-              <div className="text-4xl font-black text-[#044c3c]">15<span className="text-amber-500">+</span></div>
+              <div className="text-4xl font-black text-[#044c3c]">26<span className="text-amber-500">+</span></div>
               <div className="text-xs font-bold text-slate-500 leading-tight tracking-wider uppercase">Years<br/>Experience</div>
             </div>
           </div>
@@ -41,7 +41,7 @@ export function About() {
             </h4>
             
             <h2 className="text-4xl sm:text-5xl font-extrabold text-[#044c3c] mt-5 leading-tight">
-              Dr. Azfar Uddin <br/> Shaikh
+              Prof. Dr. Azfar Uddin <br/> Shaikh
             </h2>
             
             <h3 className="text-base sm:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-amber-500 mt-3">

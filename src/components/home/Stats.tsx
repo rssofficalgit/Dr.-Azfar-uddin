@@ -5,7 +5,7 @@ export function Stats() {
     {
       id: 1,
       icon: ShieldCheck,
-      value: "25+",
+      value: "26+",
       label: "Years of Experience"
     },
     {

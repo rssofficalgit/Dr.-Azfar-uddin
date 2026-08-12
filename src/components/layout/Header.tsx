@@ -17,8 +17,8 @@ export function Header() {
         {/* Logo Section */}
         <div className="flex items-center">
           <Link to="/" onClick={closeMobileMenu}>
-            <img src="/favicon.png" alt="Dr Azfar Uddin Shaikh Icon" className="md:hidden h-12 w-auto object-contain" />
-            <img src="/Azfar.png" alt="Dr Azfar Uddin Shaikh Urology Logo" className="hidden md:block h-16 md:h-20 w-auto object-contain" />
+            <img src="/favicon.png" alt="Prof. Dr. Azfar Uddin Shaikh Icon" className="md:hidden h-12 w-auto object-contain" />
+            <img src="/Azfar.png" alt="Prof. Dr. Azfar Uddin Shaikh Urology Logo" className="hidden md:block h-16 md:h-20 w-auto object-contain" />
           </Link>
         </div>
 
