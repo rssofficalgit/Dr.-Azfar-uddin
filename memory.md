@@ -199,6 +199,16 @@
 
 ## 13. Change Log
 
+* **2026-08-12:** Removed the "Direct Contact Info" section from `ContactPage.tsx` per user request, leaving a clean layout with the Hero header and Chambers section.
+* **2026-08-12:** Translated Working Experience (`expTitle`, `expSub`, `bdExp`, `intExp`, `bdExpList`, `intExpList`) and Memberships & Honors (`memberTitle`, `memberSub`, `membershipsList`) to full Bangla in `translations.ts` and `AboutPage.tsx` per user request.
+* **2026-08-12:** Grouped Education section into 4 distinct categories (Medical Degrees, International Fellowships, Specialized Training, Early Academic Excellence) with header icons and cards in `translations.ts` and `AboutPage.tsx` per user request.
+* **2026-08-12:** Separated Education section into 9 distinct cards (MBBS, MS Urology, MD USA, FACS USA, Singapore Fellowship, USA Fellowship, India Fellowship, Microsurgery Training, Early Education) in `translations.ts` and `AboutPage.tsx` per user request.
+* **2026-08-12:** Updated doctor statement quote in `AboutPage.tsx` to include `urology, andrology and microsurgery` per user request.
+* **2026-08-12:** Updated badge credential on About page to `Performs highest number of urological microsurgeries in the world` / `বিশ্বজুড়ে সর্বাধিক সংখ্যক ইউরোলজিক্যাল মাইক্রোসার্জারি সম্পন্নকারী সার্জন` in `translations.ts` per user request.
+* **2026-08-12:** Updated sub-heading on About page to exact phrase `Urologist, Andrologist & Male Fertility Specialist` / `ইউরোলজিস্ট, এন্ড্রোলজিস্ট ও মেল ফার্টিলিটি স্পেশালিস্ট` in `translations.ts` per user request.
+* **2026-08-12:** Updated doctor degrees in `translations.ts` and `assets/About.json` to `MBBS, MS (Urology), MD (USA), FACS (USA)` / `এমবিবিএস, এমএস (ইউরোলজি), এমডি (ইউএসএ), এফএসিএস (ইউএসএ)` per user request.
+* **2026-08-12:** Implemented scroll-triggered count-up animation with smooth ease-out physics and Bangla digit support in `Stats.tsx` per user request.
+* **2026-08-12:** Updated Stats section in `Stats.tsx` and `translations.ts`: Patient Count -> `100,000+`, Journals -> `15+`, Added Microsurgeries Performed -> `5,000+`, Added Conferences Attended -> `100+`.
 * **2026-08-12:** Updated the English language flag badge in `Header.tsx` to the US flag 🇺🇸 per user request.
 * **2026-08-12:** Placed the Language toggle button *after* the Book Appointment button in `Header.tsx` and removed the Chamber Hours block from `Footer.tsx` per user request.
 * **2026-08-12:** Added custom SVG flag badges (Bangladesh 🇧🇩 and English/UK 🇬🇧) to the Language toggle button in `Header.tsx` for desktop and mobile menus per user request.

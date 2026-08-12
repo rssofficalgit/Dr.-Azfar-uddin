@@ -34,13 +34,15 @@ export const translations = {
     stats: {
       experience: "Years of Experience",
       patients: "Patients Served",
-      journals: "Journals & Publications"
+      microsurgeries: "Microsurgeries Performed",
+      journals: "Journal Publications",
+      conferences: "Conferences Attended"
     },
     // About Section
     about: {
       badge: "Meet Our Specialist",
       name: "Prof. Dr. Azfar Uddin Shaikh",
-      degrees: "MBBS, FCPS (Urology), MCh (Urology), FACS (USA)",
+      degrees: "MBBS, MS (Urology), MD (USA), FACS (USA)",
       yearsExp: "Years Experience",
       heading: "Dedicated to Excellence in Urological & Andrological Care",
       p1: "Prof. Dr. Azfar Uddin Shaikh is a internationally acclaimed Urological Microsurgeon and Andrologist with over 26 years of dedicated service in advanced microsurgery, endourology, and male infertility treatments.",
@@ -144,8 +146,8 @@ export const translations = {
     },
     // About Page
     aboutPage: {
-      heroSub: "Urologist & Microsurgeon",
-      topBadge: "Global Top Varicocelectomy Performer",
+      heroSub: "Urologist, Andrologist & Male Fertility Specialist",
+      topBadge: "Performs highest number of urological microsurgeries in the world",
       introTitle: "Professional Journey",
       eduTitle: "Educational Qualifications",
       eduSub: "Academic Background",
@@ -154,7 +156,54 @@ export const translations = {
       bdExp: "In Bangladesh",
       intExp: "International",
       memberTitle: "Memberships & Honors",
-      memberSub: "Global Affiliations"
+      educationGroups: {
+        degreesTitle: "Medical Degrees & Board Certification",
+        fellowshipsTitle: "International Fellowships",
+        trainingTitle: "Specialized Training",
+        earlyEduTitle: "Early Academic Excellence",
+        degrees: [
+          { title: "MBBS", desc: "MBBS from Dhaka Medical College (DMC)." },
+          { title: "MS (Urology)", desc: "MS (Urology) from Bangabandhu Sheikh Mujib Medical University (BSMMU - former IPGMR)." },
+          { title: "MD (USA)", desc: "Medical Residency completed at New York Medical College, USA." },
+          { title: "FACS (USA)", desc: "Fellow of the American College of Surgeons (FACS), USA." }
+        ],
+        fellowships: [
+          { title: "Fellowship (Singapore)", desc: "Laparoscopic Urology, Endourology & Renal Transplantation at TTSH (SUA Fellowship), Singapore." },
+          { title: "Fellowship (USA)", desc: "Advanced Urology & Andrology Fellowship at Lincoln Medical Center, New York, USA." },
+          { title: "Fellowship (India)", desc: "Robotic Urological Surgery Fellowship at AIIMS, New Delhi, India." }
+        ],
+        training: [
+          { title: "Microsurgery Training", desc: "Specialized Urological Microsurgery & Male Infertility Training in New Delhi, India & USA." }
+        ],
+        earlyEducation: [
+          { title: "SSC & HSC Excellence", desc: "Secured top combined merit list positions in SSC & HSC examinations. Awarded 'Chancellor Prize' by the Honorable President of Bangladesh." }
+        ]
+      },
+      bdExpList: [
+        "Currently serving as Head of Department (Urology), Anwer Khan Modern Medical College, Dhaka.",
+        "Professor (Visiting), Urology, Shahabuddin Medical College, Gulshan, Dhaka.",
+        "Senior Consultant, Urology, Imperial-Apollo Hospital, Chattogram (Former).",
+        "Consultant, Urology, BRB Hospital, Dhaka (Former).",
+        "Urology Specialist, Apollo Hospital, Dhaka (Currently Evercare Hospital).",
+        "Assistant Professor, Urology, Ministry of Health, Dhaka.",
+        "Urology Specialist / Assistant Registrar, Dhaka Medical College Hospital.",
+        "Resident, Urology, BSMMU.",
+        "Assistant Registrar, Surgery, Rajshahi Medical College Hospital.",
+        "Medical Officer, Surgery, BIRDEM Hospital, Dhaka."
+      ],
+      intExpList: [
+        "Consultant, Urology, Miramichi Regional Hospital, New Brunswick, Canada.",
+        "Visiting Faculty & Consultant, Microsurgical Urology & Andrology, USA & India.",
+        "Fellow & Clinical Researcher, TTSH Hospital, Singapore.",
+        "Residency & Fellowship Training, New York Medical College & Lincoln Medical Center, USA."
+      ],
+      membershipsList: [
+        "Full Member, American Urological Association (AUA).",
+        "Fellow, American College of Surgeons (FACS).",
+        "Member, Endourological Society & International Society for Sexual Medicine (ISSM).",
+        "Attended more than 100 international conferences and presented scientific papers globally.",
+        "Faculty & Chairperson at ANDROCON (Andrological Conference of Urological Society of India)."
+      ]
     },
     // Contact Page
     contactPage: {
@@ -196,15 +245,17 @@ export const translations = {
     },
     // Stats Section
     stats: {
-      experience: "বছরের চিকিৎসা অভিজ্ঞতা",
+      experience: "বছরের অভিজ্ঞতা",
       patients: "চিকিৎসা গ্রহণকারী রোগী",
-      journals: "জার্নাল ও গবেষণা প্রকাশনা"
+      microsurgeries: "ইউরোলজিক্যাল মাইক্রোসার্জারি সম্পন্ন",
+      journals: "জার্নাল প্রকাশনা",
+      conferences: "কনফারেন্সে অংশগ্রহণ"
     },
     // About Section
     about: {
       badge: "আমাদের বিশেষজ্ঞ চিকিৎসকের পরিচিতি",
       name: "প্রফেসর ডা. আজফার উদ্দীন শেখ",
-      degrees: "এমবিবিএস, এফসিপিএস (ইউরোলজি), এমসিএইচ (ইউরোলজি), এফএসিএস (ইউএসএ)",
+      degrees: "এমবিবিএস, এমএস (ইউরোলজি), এমডি (ইউএসএ), এফএসিএস (ইউএসএ)",
       yearsExp: "বছরের অভিজ্ঞতা",
       heading: "ইউরোলজি ও এন্ড্রোলজি চিকিৎসায় আন্তর্জাতিক মান ও সমর্পণ",
       p1: "প্রফেসর ডা. আজফার উদ্দীন শেখ আন্তর্জাতিকভাবে স্বীকৃত একজন ইউরোলজিক্যাল মাইক্রোসার্জন ও এন্ড্রোলজিস্ট, যিনি ২৬ বছরেরও বেশি সময় ধরে আধুনিক মাইক্রোসার্জারি, এন্ডো-ইউরোলজি এবং পুরুষ বন্ধ্যাত্ব চিকিৎসায় সেবা দিয়ে আসছেন।",
@@ -308,8 +359,8 @@ export const translations = {
     },
     // About Page
     aboutPage: {
-      heroSub: "ইউরোলজিস্ট ও মাইক্রোসার্জন",
-      topBadge: "গ্লোবাল শীর্ষ ভ্যারিকোসিলোটমি পারফর্মার",
+      heroSub: "ইউরোলজিস্ট, এন্ড্রোলজিস্ট ও মেল ফার্টিলিটি স্পেশালিস্ট",
+      topBadge: "বিশ্বজুড়ে সর্বাধিক সংখ্যক ইউরোলজিক্যাল মাইক্রোসার্জারি সম্পন্নকারী সার্জন",
       introTitle: "পেশাগত দৃষ্টিভঙ্গি",
       eduTitle: "শিক্ষাগত যোগ্যতা",
       eduSub: "একাডেমিক সাফল্য",
@@ -318,7 +369,54 @@ export const translations = {
       bdExp: "বাংলাদেশে অভিজ্ঞতা",
       intExp: "আন্তর্জাতিক অভিজ্ঞতা",
       memberTitle: "সদস্যপদ ও সম্মাননা",
-      memberSub: "আন্তর্জাতিক অ্যাফিলিয়েশন"
+      educationGroups: {
+        degreesTitle: "মেডিকেল ডিগ্রি ও বোর্ড সার্টিফিকেশন",
+        fellowshipsTitle: "আন্তর্জাতিক ফেলোশিপসমূহ",
+        trainingTitle: "বিশেষায়িত অ্যাডভান্সড ট্রেনিং",
+        earlyEduTitle: "প্রাথমিক ও মাধ্যমিক শিক্ষা",
+        degrees: [
+          { title: "এমবিবিএস (MBBS)", desc: "ঢাকা মেডিকেল কলেজ (DMC) থেকে সফলভাবে এমবিবিএস সম্পন্ন।" },
+          { title: "এমএস - ইউরোলজি (MS Urology)", desc: "বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয় (BSMMU - তত্কালীন IPGMR) থেকে ইউরোলজিতে এমএস।" },
+          { title: "এমডি - ইউএসএ (MD USA)", desc: "নিউ ইয়র্ক মেডিকেল কলেজ, যুক্তরাষ্ট্র থেকে রেসিডেন্সি সম্পন্ন।" },
+          { title: "এফএসিএস - ইউএসএ (FACS USA)", desc: "ফেলো অব দ্য আমেরিকান কলেজ অব সার্জনস (FACS), মার্কিন যুক্তরাষ্ট্র।" }
+        ],
+        fellowships: [
+          { title: "ফেলোশিপ (সিঙ্গাপুর)", desc: "ল্যাপারোস্কোপিক ইউরোলজি, এন্ডোইউরোলজি ও রেনাল ট্রান্সপ্লান্টেশন, টিটিএসএইচ (SUA Fellowship), সিঙ্গাপুর।" },
+          { title: "ফেলোশিপ (ইউএসএ)", desc: "ইউরোলজি ও এন্ড্রোলজি ফেলোশিপ, লিঙ্কন মেডিকেল সেন্টার, নিউ ইয়র্ক, যুক্তরাষ্ট্র।" },
+          { title: "ফেলোশিপ (ইন্ডিয়া)", desc: "রোবোটিক ইউরোলজিক্যাল সার্জারি ফেলোশিপ, অল ইন্ডিয়া ইনস্টিটিউট অব মেডিকেল সায়েন্সেস (AIIMS), নতুন দিল্লি, ভারত।" }
+        ],
+        training: [
+          { title: "মাইক্রোসার্জারি ট্রেনিং", desc: "নতুন দিল্লি (ভারত) এবং যুক্তরাষ্ট্রে ইউরোলজিক্যাল মাইক্রোসার্জারি ও মেল ইনফার্টিলিটিতে বিশেষ প্রশিক্ষণ।" }
+        ],
+        earlyEducation: [
+          { title: "এসএসসি ও এইচএসসি সাফল্য", desc: "এসএসসি ও এইচএসসি পরীক্ষায় সম্মিলিত মেধা তালিকায় শীর্ষ স্থান অর্জন। গণপ্রজাতন্ত্রী বাংলাদেশের মহামান্য রাষ্ট্রপতি কর্তৃক 'চ্যান্সেলর প্রাইজ' সম্মাননা অর্জন।" }
+        ]
+      },
+      bdExpList: [
+        "বর্তমানে বিভাগীয় প্রধান (ইউরোলজি), আনোয়ার খান মডার্ন মেডিকেল কলেজ, ঢাকা হিসেবে কর্মরত।",
+        "ভিজিটিং প্রফেসর, ইউরোলজি বিভাগ, শাহাবুদ্দিন মেডিকেল কলেজ, গুলশান, ঢাকা।",
+        "সিনিয়র কনসালটেন্ট, ইউরোলজি, ইম্পেরিয়াল-অ্যাপোলো হাসপাতাল, চট্টগ্রাম (সাবেক)।",
+        "কনসালটেন্ট, ইউরোলজি, বিআরবি হাসপাতাল, ঢাকা (সাবেক)।",
+        "ইউরোলজি স্পেশালিস্ট, অ্যাপোলো হাসপাতাল, ঢাকা (বর্তমানে এভারকেয়ার হাসপাতাল)।",
+        "সহকারী অধ্যাপক, ইউরোলজি, স্বাস্থ্য মন্ত্রণালয়, ঢাকা।",
+        "ইউরোলজি স্পেশালিস্ট / সহকারী রেজিস্টার, ঢাকা মেডিকেল কলেজ হাসপাতাল।",
+        "রেসিডেন্ট, ইউরোলজি, বিএসএমএমইউ (BSMMU)।",
+        "সহকারী রেজিস্টার, সার্জারি, রাজশাহী মেডিকেল কলেজ হাসপাতাল।",
+        "মেডিকেল অফিসার, সার্জারি, বারডেম হাসপাতাল (BIRDEM), ঢাকা।"
+      ],
+      intExpList: [
+        "কনসালটেন্ট, ইউরোলজি, মিরামিচি আঞ্চলিক হাসপাতাল, নিউ ব্রান্সউইক, কানাডা।",
+        "ভিজিটিং ফ্যাকাল্টি ও কনসালটেন্ট, মাইক্রোসার্জিক্যাল ইউরোলজি ও এন্ড্রোলজি, ইউএসএ এবং ভারত।",
+        "ফেলো ও ক্লিনিক্যাল রিসার্চার, টিটিএসএইচ হাসপাতাল, সিঙ্গাপুর।",
+        "রেসিডেন্সি ও ফেলোশিপ ট্রেনিং, নিউ ইয়র্ক মেডিকেল কলেজ ও লিঙ্কন মেডিকেল সেন্টার, ইউএসএ।"
+      ],
+      membershipsList: [
+        "ফুল মেম্বার, আমেরিকান ইউরোলজিক্যাল অ্যাসোসিয়েশন (AUA)।",
+        "ফেলো, আমেরিকান কলেজ অব সার্জনস (FACS)।",
+        "সদস্য, এন্ডোইউরোলজিক্যাল সোসাইটি এবং ইন্টারন্যাশনাল সোসাইটি ফর সেক্সুয়াল মেডিসিন (ISSM)।",
+        "১০০টিরও বেশি আন্তর্জাতিক কনফারেন্সে অংশগ্রহণ এবং বিভিন্ন বিজ্ঞানভিত্তিক প্রবন্ধ উপস্থাপন।",
+        "ANDROCON (ইউরোলজিক্যাল সোসাইটি অব ইন্ডিয়ার এন্ড্রোলজি কনফারেন্স) এ ফ্যাকাল্টি ও চেয়ারম্যান হিসেবে দায়িত্ব পালন।"
+      ]
     },
     // Contact Page
     contactPage: {

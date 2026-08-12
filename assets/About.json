@@ -96,7 +96,7 @@
               "elType": "widget",
               "isInner": false,
               "settings": {
-                "editor": "<p style=\"color: #006B5B; font-weight: 600; margin-bottom: 20px; font-size: 16px;\">MBBS, FCPS (Urology), MCh (Urology), FACS (USA)</p><p style=\"color: #4A5568; line-height: 1.7; margin-bottom: 30px; font-size: 15px;\">Renowned Urologist, Andrologist & Microsurgeon dedicated to providing advanced, ethical and compassionate care for all urological and male fertility concerns.</p>"
+                "editor": "<p style=\"color: #006B5B; font-weight: 600; margin-bottom: 20px; font-size: 16px;\">MBBS, MS (Urology), MD (USA), FACS (USA)</p><p style=\"color: #4A5568; line-height: 1.7; margin-bottom: 30px; font-size: 15px;\">Renowned Urologist, Andrologist & Microsurgeon dedicated to providing advanced, ethical and compassionate care for all urological and male fertility concerns.</p>"
               },
               "widgetType": "text-editor"
             },

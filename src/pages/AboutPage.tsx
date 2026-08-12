@@ -54,8 +54,8 @@ export function AboutPage() {
           <QuoteIcon />
           <p className="text-slate-600 text-lg lg:text-xl leading-relaxed italic mb-8">
             {language === 'bn' 
-              ? `"একজন ইউরোলজিস্ট হিসেবে আমি চিকিৎসা পেশায় গুরুত্বপূর্ণ ভূমিকা পালন করে আসছি। আমার লক্ষ্য আন্তর্জাতিক মানের চিকিৎসা ও উদ্ভাবনী প্রযুক্তি যুক্ত করে বাংলাদেশে ইউরোলজি ও মেল ইনফার্টিলিটি চিকিৎসাকে আরও এগিয়ে নিয়ে যাওয়া।"`
-              : `"As a urologist, I have carried forward a legacy of significant roles and responsibilities in the healthcare profession. My mission is to advance urology in Bangladesh by continuously integrating innovative techniques and international standards of care."`}
+              ? `"একজন ইউরোলজিস্ট হিসেবে আমি চিকিৎসা পেশায় গুরুত্বপূর্ণ ভূমিকা পালন করে আসছি। আমার লক্ষ্য আন্তর্জাতিক মানের চিকিৎসা ও উদ্ভাবনী প্রযুক্তি যুক্ত করে বাংলাদেশে ইউরোলজি, এন্ড্রোলজি এবং মাইক্রোসার্জারি চিকিৎসাকে আরও এগিয়ে নিয়ে যাওয়া।"`
+              : `"As a urologist, I have carried forward a legacy of significant roles and responsibilities in the healthcare profession. My mission is to advance urology, andrology and microsurgery in Bangladesh by continuously integrating innovative techniques and international standards of care."`}
           </p>
           <p className="text-slate-500">
             {t.about.p2}
@@ -65,34 +65,77 @@ export function AboutPage() {
 
       {/* Education */}
       <section className="py-8 lg:py-10">
-        <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
-          <SectionHeader title="Educational Qualifications" subtitle="Academic Background" />
+        <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
+          <SectionHeader title={t.aboutPage.eduTitle} subtitle={t.aboutPage.eduSub} />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-            <EducationCard 
-              title="MBBS & MS (Urology)" 
-              desc="MBBS from Dhaka Medical College regularly. MS (Urology) from BSMMU (the then IPGMR)." 
-            />
-            <EducationCard 
-              title="MD (USA)" 
-              desc="Residency completed at New York Medical College, USA." 
-            />
-            <EducationCard 
-              title="Fellowship (Singapore)" 
-              desc="Laparoscopic Urology, Endourology & Renal Transplantation, TTSH (SUA Fellowship)." 
-            />
-            <EducationCard 
-              title="Fellowship (USA & India)" 
-              desc="Urology & Andrology at Lincoln Medical Center, NY. Robotic Surgery at AIIMS, New Delhi." 
-            />
-            <EducationCard 
-              title="Microsurgery Training" 
-              desc="Specialized training completed in New Delhi, India." 
-            />
-            <EducationCard 
-              title="Early Education" 
-              desc="SSC & HSC: Got position in combined merit list. Awarded 'Chancellor Prize' from Honorable President of Bangladesh." 
-            />
+          <div className="space-y-10 mt-12">
+            {/* Group 1: Degrees */}
+            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)]">
+              <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                <div className="bg-[#044c3c] text-white p-2.5 rounded-xl shadow-xs">
+                  <GraduationCap className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-extrabold text-[#044c3c]">
+                  {t.aboutPage.educationGroups.degreesTitle}
+                </h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {t.aboutPage.educationGroups.degrees.map((item, index) => (
+                  <EducationCard key={index} title={item.title} desc={item.desc} />
+                ))}
+              </div>
+            </div>
+
+            {/* Group 2: Fellowships */}
+            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)]">
+              <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                <div className="bg-amber-500 text-white p-2.5 rounded-xl shadow-xs">
+                  <Award className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-extrabold text-[#044c3c]">
+                  {t.aboutPage.educationGroups.fellowshipsTitle}
+                </h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {t.aboutPage.educationGroups.fellowships.map((item, index) => (
+                  <EducationCard key={index} title={item.title} desc={item.desc} />
+                ))}
+              </div>
+            </div>
+
+            {/* Group 3 & 4: Training & Early Education */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Group 3: Training */}
+              <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col">
+                <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                  <div className="bg-emerald-600 text-white p-2.5 rounded-xl shadow-xs">
+                    <Briefcase className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-extrabold text-[#044c3c]">
+                    {t.aboutPage.educationGroups.trainingTitle}
+                  </h3>
+                </div>
+                {t.aboutPage.educationGroups.training.map((item, index) => (
+                  <EducationCard key={index} title={item.title} desc={item.desc} />
+                ))}
+              </div>
+
+              {/* Group 4: Early Education */}
+              <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col">
+                <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                  <div className="bg-rose-500 text-white p-2.5 rounded-xl shadow-xs">
+                    <CheckCircle2 className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-extrabold text-[#044c3c]">
+                    {t.aboutPage.educationGroups.earlyEduTitle}
+                  </h3>
+                </div>
+                {t.aboutPage.educationGroups.earlyEducation.map((item, index) => (
+                  <EducationCard key={index} title={item.title} desc={item.desc} />
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -100,7 +143,7 @@ export function AboutPage() {
       {/* Working Experience */}
       <section className="py-8 lg:py-10 bg-white">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
-          <SectionHeader title="Working Experience" subtitle="Professional Journey" />
+          <SectionHeader title={t.aboutPage.expTitle} subtitle={t.aboutPage.expSub} />
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
             
@@ -110,20 +153,13 @@ export function AboutPage() {
                 <div className="bg-[#044c3c] p-2.5 rounded-xl">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-800">In Bangladesh</h3>
+                <h3 className="text-2xl font-bold text-slate-800">{t.aboutPage.bdExp}</h3>
               </div>
               
               <ul className="space-y-4">
-                <ExpItem text="Currently serving as Head of Department (Urology), Anwer Khan Modern Medical College, Dhaka." active />
-                <ExpItem text="Professor (Visiting), Urology, Shahabuddin Medical College, Gulshan, Dhaka." />
-                <ExpItem text="Senior Consultant, Urology, Imperial-Apollo Hospital, Chattogram (Former)." />
-                <ExpItem text="Consultant, Urology, BRB Hospital, Dhaka (Former)." />
-                <ExpItem text="Urology Specialist, Apollo Hospital, Dhaka (Currently Evercare Hospital)." />
-                <ExpItem text="Assistant Professor, Urology, Ministry of Health, Dhaka." />
-                <ExpItem text="Urology Specialist / Assistant Registrar, Dhaka Medical College Hospital." />
-                <ExpItem text="Resident, Urology, BSMMU." />
-                <ExpItem text="Assistant Registrar, Surgery, Rajshahi Medical College Hospital." />
-                <ExpItem text="Medical Officer, Surgery, BIRDEM Hospital, Dhaka." />
+                {t.aboutPage.bdExpList.map((item, idx) => (
+                  <ExpItem key={idx} text={item} active={idx === 0} />
+                ))}
               </ul>
             </div>
 
@@ -133,16 +169,13 @@ export function AboutPage() {
                 <div className="bg-amber-500 p-2.5 rounded-xl">
                   <Globe className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-800">International</h3>
+                <h3 className="text-2xl font-bold text-slate-800">{t.aboutPage.intExp}</h3>
               </div>
               
               <ul className="space-y-4">
-                <ExpItem text="Consultant, Urology, Miramichi Regional Hospital, New Brunswick, Canada." />
-                <ExpItem text="Resident & Fellow, Urology, New York Medical College, USA." />
-                <ExpItem text="Fellow Urology, Lincoln Medical Center, NY, USA." />
-                <ExpItem text="Registrar Urology, Tan Tock Seng Hospital (NHG), Singapore." />
-                <ExpItem text="Fellow & Scholar, Singapore Urological Association, Singapore." />
-                <ExpItem text="SIU Fellow, All India Institute of Medical Sciences, New Delhi, India." />
+                {t.aboutPage.intExpList.map((item, idx) => (
+                  <ExpItem key={idx} text={item} />
+                ))}
               </ul>
             </div>
 
@@ -150,38 +183,22 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* Memberships & Conferences */}
+      {/* Memberships & Honors */}
       <section className="py-8 lg:py-10 mb-10">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            {/* Memberships */}
-            <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-3 mb-6">
-                <Briefcase className="w-6 h-6 text-[#044c3c]" />
-                <h3 className="text-xl font-bold text-slate-800">Professional Memberships</h3>
+          <SectionHeader title={t.aboutPage.memberTitle} subtitle={t.aboutPage.memberSub} />
+          <div className="mt-12 bg-white rounded-[2rem] p-8 lg:p-10 shadow-sm border border-slate-100 hover:shadow-md transition-shadow max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="bg-[#044c3c] text-white p-2.5 rounded-xl">
+                <Briefcase className="w-6 h-6" />
               </div>
-              <ul className="space-y-3">
-                <CheckItem text="Life Member of Bangladesh Association of Urological Surgeons." />
-                <CheckItem text="Associate Member Singapore Urological Association." />
-                <CheckItem text="Member SIU." />
-                <CheckItem text="Member Urological Association of Asia." />
-                <CheckItem text="International Member of the American Urological Association." />
-              </ul>
+              <h3 className="text-2xl font-bold text-slate-800">{t.aboutPage.memberTitle}</h3>
             </div>
-
-            {/* Conferences */}
-            <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-3 mb-6">
-                <GraduationCap className="w-6 h-6 text-amber-500" />
-                <h3 className="text-xl font-bold text-slate-800">Conferences & Speaking</h3>
-              </div>
-              <ul className="space-y-3">
-                <CheckItem text="Attended more than 100 international conferences and presented papers on many occasions." />
-                <CheckItem text="Attended recently as a Faculty and Chairperson in ANDROCON 2024 (Andrological Conference of Urological Society of India)." />
-              </ul>
-            </div>
-
+            <ul className="space-y-4">
+              {t.aboutPage.membershipsList.map((item, idx) => (
+                <CheckItem key={idx} text={item} />
+              ))}
+            </ul>
           </div>
         </div>
       </section>
