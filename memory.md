@@ -199,6 +199,7 @@
 
 ## 13. Change Log
 
+* **2026-08-12:** Created `vercel.json` and `public/_redirects` with SPA rewrite rules (`/(.*)` -> `/index.html`) to resolve Vercel 404 NOT_FOUND errors on sub-page refreshes/direct visits.
 * **2026-08-12:** Added `Prof.` prefix before `Dr. Azfar Uddin Shaikh` across all site titles, components (`About.tsx`, `Hero.tsx`, `FAQ.tsx`, `Testimonials.tsx`, `Header.tsx`, `Footer.tsx`), blog data (`blogs.ts`), assets, and `index.html`.
 * **2026-08-12:** Removed the floating contact card containing the phone number from the `Hero.tsx` section per user request.
 * **2026-08-12:** Updated years of experience across the entire website (`Stats.tsx`, `Hero.tsx`, `About.tsx`) from 15+/25+ to **26+** per user request.
