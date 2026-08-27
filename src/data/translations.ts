@@ -56,30 +56,49 @@ export const translations = {
       title: "Comprehensive Urological Services",
       subtitle: "Offering state-of-the-art diagnostic and surgical care for complex urological, andrological, and fertility conditions.",
       items: {
-        varicocelectomyTitle: "Microsurgical Varicocelectomy",
-        varicocelectomyDesc: "Gold standard microsurgical treatment for varicocele to restore male fertility and relieve pain.",
-        maleInfertilityTitle: "Male Infertility & Azoospermia",
-        maleInfertilityDesc: "Advanced MicroTESE, MESA, and sperm retrieval procedures for complex infertility.",
-        kidneyStoneTitle: "Laser Stone Surgery (RIRS / PCNL)",
-        kidneyStoneDesc: "Minimally invasive laser procedures for precise, painless removal of kidney & ureter stones.",
-        prostateTitle: "Prostate Care (TURP / Laser)",
-        prostateDesc: "Modern endoscopic treatments for enlarged prostate (BPH) ensuring quick recovery.",
-        andrologyTitle: "Andrology & Men's Health",
+        andrologyTitle: "Andrology",
         andrologyDesc: "Specialized management for erectile dysfunction, hormone balance, and sexual wellness.",
-        pediatricTitle: "Pediatric Urology (Hypospadias)",
-        pediatricDesc: "Reconstructive pediatric surgical correction for hypospadias and congenital defects.",
-        microsurgeryTitle: "Reconstructive Microsurgery (VEA/VVA)",
+        andrologyDetails: "Deals with men's sexual and reproductive problems.\n\n• Erection problems or not being able to maintain it\n• Low testosterone hormone\n• Quick or premature ejaculation\n\nTreatment: Blood test checks hormones, blood flow and nerves are examined, then medicine, hormone therapy, or a small procedure is given.",
+        
+        microsurgeryTitle: "Urological Microsurgery",
         microsurgeryDesc: "Vasovasostomy and Vasoepididymostomy microsurgery for vasectomy reversal and blockage repair.",
-        urinaryTractTitle: "UTI & Bladder Care",
-        urinaryTractDesc: "Comprehensive diagnosis and therapy for chronic urinary tract infections and bladder dysfunction.",
-        urologicOncologyTitle: "Urologic Oncology",
-        urologicOncologyDesc: "Expert surgical management of kidney, bladder, prostate, and testicular cancers.",
-        laparoscopicTitle: "Laparoscopic Urology",
-        laparoscopicDesc: "Keyhole laparoscopic surgery for kidney removal, cyst excision, and reconstructive procedures.",
-        strictureTitle: "Urethral Stricture Repair",
-        strictureDesc: "Advanced urethroplasty and endoscopic surgery for complex urethral strictures.",
-        circumcisionTitle: "Advanced Circumcision & Penile Surgery",
-        circumcisionDesc: "Pain-free aesthetic circumcision, Peyronie's disease surgery, and penile implants."
+        microsurgeryDetails: "Surgery done under a microscope on very tiny body parts.\n\nWhen needed:\n• Reversing vasectomy\n• Fixing varicocele\n• Collecting sperm\n\nHow: Surgeon uses small tools and a microscope to join fine tubes or blood vessels.",
+        
+        kidneyStoneTitle: "Endourology and Kidney Stone",
+        kidneyStoneDesc: "Minimally invasive laser procedures for precise, painless removal of kidney & ureter stones.",
+        kidneyStoneDetails: "Treats kidney or urinary stones without any big cut.\n\nHow: A camera tube goes through the natural passage and breaks the stone with laser. Big stones are removed through a tiny hole in the back (PCNL).\n\nWho needs it: Patients with kidney or urinary tract stones.",
+        
+        generalUrologyTitle: "General Urology",
+        generalUrologyDesc: "Comprehensive diagnosis and treatment for common urological conditions.",
+        generalUrologyDetails: "Handles common urinary problems.\n\n• Urinary infection\n• Enlarged prostate\n• Leaking urine\n\nThis is usually the first check up before going to a specific specialist.",
+        
+        maleInfertilityTitle: "Male Infertility",
+        maleInfertilityDesc: "Advanced MicroTESE, MESA, and sperm retrieval procedures for complex infertility.",
+        maleInfertilityDetails: "Looks at why a couple can't have a baby because of the man.\n\n• Low sperm count\n• Weak sperm movement\n• Hormone problems\n• Blocked tubes\n\nTreatment: Lifestyle change, medicine, surgery, or collecting sperm for IVF/ICSI.",
+        
+        neuroUrologyTitle: "Neuro-urology",
+        neuroUrologyDesc: "Advanced diagnosis and management of neurological conditions affecting the urinary tract.",
+        neuroUrologyDetails: "Deals with bladder problems caused by nerve damage.\n\nWho gets it: Patients with spinal cord injury, stroke, diabetes, or multiple sclerosis.\n\nTreatment: A test checks the bladder and nerves, then treated with medicine, catheter, or nerve stimulation.",
+        
+        uroOncologyTitle: "Uro Oncology",
+        uroOncologyDesc: "Expert surgical management of kidney, bladder, prostate, and testicular cancers.",
+        uroOncologyDetails: "Treats cancers of the urinary and male reproductive organs.\n\nCancers covered: Kidney, bladder, prostate, testis, penis cancer.\n\nTreatment: Diagnosis with biopsy and scans, then surgery, chemotherapy, and regular follow up.",
+        
+        reconstructiveTitle: "Reconstructive Urology",
+        reconstructiveDesc: "Advanced reconstructive surgeries to restore normal function to the urinary tract.",
+        reconstructiveDetails: "Repairs damaged or faulty parts of the urinary tract.\n\nWho needs it: Narrowed tube, birth defect, injury, or complication from earlier surgery.\n\nHow: Tissue from another part of the body rebuilds the damaged part to restore normal function.",
+        
+        pediatricTitle: "Pediatric Urology",
+        pediatricDesc: "Reconstructive pediatric surgical correction for congenital defects and urinary tract conditions.",
+        pediatricDetails: "Treats urinary and genital problems in children.\n\n• Undescended testicle\n• Birth defects\n• Bedwetting\n• Reverse flow of urine to kidney\n\nSpecial child-friendly and gentle methods are used.",
+        
+        femaleUrologyTitle: "Female Urology",
+        femaleUrologyDesc: "Specialized care for female pelvic medicine, incontinence, and urinary tract disorders.",
+        femaleUrologyDetails: "Treats women's urinary problems.\n\n• Leaking urine\n• Organs slipping down\n• Repeated infections\n• Bladder issues after childbirth\n\nTreatment: Pelvic exercises to small surgery if needed.",
+        
+        laparoscopyRoboticTitle: "Laparoscopy & Robotic",
+        laparoscopyRoboticDesc: "Minimally invasive laparoscopic and robotic-assisted surgeries for precision and quick recovery.",
+        laparoscopyRoboticDetails: "Complex operations are done through small holes using a camera and tools without a big cut. Robotic surgery uses a robot for even more precise movement.\n\nUsed for: Removing kidney, prostate, or tumors.\n\nBenefit: Less pain, less scar, faster recovery."
       }
     },
     // Banner Section
@@ -156,6 +175,7 @@ export const translations = {
       bdExp: "In Bangladesh",
       intExp: "International",
       memberTitle: "Memberships & Honors",
+      memberSub: "Professional Affiliations",
       educationGroups: {
         degreesTitle: "Medical Degrees & Board Certification",
         fellowshipsTitle: "International Fellowships",
@@ -269,30 +289,49 @@ export const translations = {
       title: "আমাদের প্রধান ইউরোলজিক্যাল ও এন্ড্রোলজিক্যাল চিকিৎসাসমূহ",
       subtitle: "জটিল ইউরোলজিক্যাল, এন্ড্রোলজিক্যাল এবং প্রজননজনিত সমস্যার জন্য আন্তর্জাতিক মানের আধুনিক ডায়াগনস্টিক ও সার্জিক্যাল সেবা।",
       items: {
-        varicocelectomyTitle: "মাইক্রোসার্জিক্যাল ভ্যারিকোসিলোটমি",
-        varicocelectomyDesc: "ভ্যারিকোসিল চিকিৎসায় বিশ্ব স্বীকৃত গোল্ড স্ট্যান্ডার্ড মাইক্রোসার্জারি, যা উর্বরতা বৃদ্ধি করে ও ব্যথা দূর করে।",
-        maleInfertilityTitle: "পুরুষ বন্ধ্যাত্ব ও অ্যাজোস্পার্মিয়া",
-        maleInfertilityDesc: "জটিল বন্ধ্যাত্ব ও জিরো স্পার্ম চিকিৎসায় আধুনিক MicroTESE, MESA এবং স্পার্ম রিকভারি পদ্ধতি।",
-        kidneyStoneTitle: "লেজার স্টোন সার্জারি (RIRS / PCNL)",
-        kidneyStoneDesc: "বিনা কাটায় লেজারের সাহায্যে কিডনি ও মূত্রনালীর পাথর সূক্ষ্ম ও ব্যথামুক্তভাবে অপসারণ।",
-        prostateTitle: "প্রস্টেট চিকিৎসা (TURP / Laser)",
-        prostateDesc: "প্রস্টেট বৃদ্ধি (BPH) সমস্যার জন্য আধুনিক এন্ডোস্কোপিক ও লেজার চিকিৎসা, যা দ্রুত সুস্থতা নিশ্চিত করে।",
-        andrologyTitle: "এন্ড্রোলজি ও পুরুষ যৌনস্বাস্থ্য",
+        andrologyTitle: "এন্ড্রোলজি",
         andrologyDesc: "যৌন দুর্বলতা, হরমোন ভারসাম্যহীনতা এবং পুরুষ স্বাস্থ্য জটিলতার বৈজ্ঞানিক ও আধুনিক সমাধান।",
-        pediatricTitle: "পেডিয়াট্রিক ইউরোলজি (হাইপোস্প্যাডিয়াস)",
-        pediatricDesc: "শিশুদের জন্মগত হাইপোস্প্যাডিয়াস ও মূত্রনালীর জটিলতার সফল রিকনস্ট্রাক্টিভ সার্জারি।",
-        microsurgeryTitle: "রিকনস্ট্রাক্টিভ মাইক্রোসার্জারি (VEA/VVA)",
+        andrologyDetails: "পুরুষদের যৌন ও প্রজনন সমস্যা নিয়ে কাজ করে।\n\n• লিঙ্গ শক্ত না হওয়া বা উত্থান ধরে রাখতে না পারা\n• টেস্টোস্টেরন হরমোন কমে যাওয়া\n• দ্রুত বীর্যপাত হয়ে যাওয়া\n\nচিকিৎসা: রক্ত পরীক্ষা করে হরমোন দেখা হয়, রক্ত চলাচল ও স্নায়ু পরীক্ষা করা হয়, তারপর ওষুধ, হরমোন থেরাপি বা ছোট প্রসিডিউর দেওয়া হয়।",
+        
+        microsurgeryTitle: "ইউরোলজিক্যাল মাইক্রোসার্জারি",
         microsurgeryDesc: "ভ্যাসেকটমি রিভার্সাল এবং মূত্র ও শুক্রনালীর ব্লক খোলার জন্য সূক্ষ্ম মাইক্রোসার্জিক্যাল চিকিৎসা।",
-        urinaryTractTitle: "ইউটিআই ও মূত্রাশয় চিকিৎসা",
-        urinaryTractDesc: "দীর্ঘমেয়াদী প্রস্রাবের ইনফেকশন (UTI) এবং মূত্রাশয়ের সমস্যার সঠিক নির্ণয় ও আধুনিক থেরাপি।",
-        urologicOncologyTitle: "ইউরোলজিক অনকোলজি (ক্যান্সার)",
-        urologicOncologyDesc: "কিডনি, প্রস্টেট, ব্লাডার ও টেস্টিকুলার ক্যান্সারের অভিজ্ঞ সার্জিক্যাল ও অনকোলজিক্যাল চিকিৎসা।",
-        laparoscopicTitle: "ল্যাপারোস্কোপিক ইউরোলজি",
-        laparoscopicDesc: "ছোট ছিদ্রে ল্যাপারোস্কোপিক সার্জারির মাধ্যমে কিডনি টিউমার ও সিস্ট অপসারণ।",
-        strictureTitle: "মূত্রনালীর সংকোচন (Urethral Stricture)",
-        strictureDesc: "সংকুচিত মূত্রনালীর আধুনিক ইউরেথ্রোপ্লাস্টি ও এন্ডোস্কোপিক সার্জারি।",
-        circumcisionTitle: "আধুনিক খতনা ও পেনাইল সার্জারি",
-        circumcisionDesc: "ব্যথামুক্ত আধুনিক খতনা, পেরোনিজ ডিজিজ চিকিৎসা এবং পেনাইল ইমপ্ল্যান্ট সার্জারি।"
+        microsurgeryDetails: "খুব ছোট ও সূক্ষ্ম অঙ্গের উপর মাইক্রোস্কোপ দিয়ে সার্জারি করা হয়।\n\nকখন লাগে:\n• ভ্যাসেকটমির পর নালী জোড়া লাগাতে\n• ভ্যারিকোসিল ঠিক করতে\n• স্পার্ম সংগ্রহ করতে\n\nকিভাবে হয়: সার্জন ছোট যন্ত্র ও মাইক্রোস্কোপ দিয়ে সূক্ষ্ম নালী বা রক্তনালী জোড়া লাগান।",
+        
+        kidneyStoneTitle: "এন্ডো-ইউরোলজি ও কিডনি পাথর",
+        kidneyStoneDesc: "বিনা কাটায় লেজারের সাহায্যে কিডনি ও মূত্রনালীর পাথর সূক্ষ্ম ও ব্যথামুক্তভাবে অপসারণ।",
+        kidneyStoneDetails: "কিডনি বা মূত্রনালীর পাথর চিকিৎসা করা হয়, কাটাছেঁড়া ছাড়াই।\n\nকিভাবে হয়: প্রস্রাবের রাস্তা দিয়ে ক্যামেরাযুক্ত নল ঢুকিয়ে লেজার দিয়ে পাথর ভাঙা হয়। বড় পাথরে পিঠে ছোট ছিদ্র করে বের করা হয় (PCNL)।\n\nকাদের লাগে: কিডনি বা মূত্রনালীতে পাথর আছে এমন রোগীদের।",
+        
+        generalUrologyTitle: "জেনারেল ইউরোলজি",
+        generalUrologyDesc: "সাধারণ ইউরোলজিক্যাল সমস্যার পূর্ণাঙ্গ রোগ নির্ণয় ও চিকিৎসা।",
+        generalUrologyDetails: "সাধারণ প্রস্রাবজনিত সমস্যা দেখা হয়।\n\n• প্রস্রাবে ইনফেকশন\n• প্রোস্টেট বড় হয়ে যাওয়া\n• প্রস্রাব ধরে রাখতে না পারা\n\nএটাই প্রথম ধাপ, প্রয়োজনে পরে বিশেষজ্ঞ শাখায় পাঠানো হয়।",
+        
+        maleInfertilityTitle: "পুরুষ বন্ধ্যাত্ব",
+        maleInfertilityDesc: "জটিল বন্ধ্যাত্ব ও জিরো স্পার্ম চিকিৎসায় আধুনিক MicroTESE, MESA এবং স্পার্ম রিকভারি পদ্ধতি।",
+        maleInfertilityDetails: "পুরুষের কারণে সন্তান না হওয়ার সমস্যা দেখা হয়।\n\n• স্পার্ম কম থাকা\n• স্পার্ম ভালোভাবে না চলা\n• হরমোন সমস্যা\n• নালীতে বাধা\n\nচিকিৎসা: জীবনযাত্রায় পরিবর্তন, ওষুধ, দরকার হলে সার্জারি, বা IVF/ICSI এর জন্য স্পার্ম সংগ্রহ।",
+        
+        neuroUrologyTitle: "নিউরো-ইউরোলজি",
+        neuroUrologyDesc: "মূত্রনালীকে প্রভাবিত করে এমন স্নায়বিক সমস্যাগুলোর উন্নত রোগ নির্ণয় ও চিকিৎসা।",
+        neuroUrologyDetails: "স্নায়ুর সমস্যার কারণে প্রস্রাবের সমস্যা দেখা হয়।\n\nকাদের হয়: স্পাইনাল কর্ড ইনজুরি, স্ট্রোক, ডায়াবেটিস বা মাল্টিপল স্ক্লেরোসিসে আক্রান্ত রোগীদের।\n\nচিকিৎসা: পরীক্ষা করে ব্লাডার ও স্নায়ু ঠিক আছে কিনা দেখা হয়, তারপর ওষুধ, ক্যাথেটার বা নার্ভ স্টিমুলেশন দিয়ে চিকিৎসা করা হয়।",
+        
+        uroOncologyTitle: "ইউরো অনকোলজি",
+        uroOncologyDesc: "কিডনি, ব্লাডার, প্রস্টেট এবং টেস্টিকুলার ক্যান্সারের বিশেষজ্ঞ সার্জিক্যাল চিকিৎসা।",
+        uroOncologyDetails: "মূত্রনালী ও পুরুষের প্রজনন অঙ্গের ক্যান্সার চিকিৎসা করা হয়।\n\nযেসব ক্যান্সার: কিডনি, ব্লাডার, প্রোস্টেট, টেস্টিস, পেনাইল ক্যান্সার।\n\nচিকিৎসা: বায়োপসি ও স্ক্যান করে রোগ নির্ণয়, তারপর সার্জারি (ওপেন, ল্যাপারোস্কোপিক বা রোবোটিক), কেমোথেরাপি ও নিয়মিত ফলোআপ।",
+        
+        reconstructiveTitle: "রিকনস্ট্রাক্টিভ ইউরোলজি",
+        reconstructiveDesc: "মূত্রনালীর স্বাভাবিক কাজ ফিরিয়ে আনতে অত্যাধুনিক রিকনস্ট্রাক্টিভ সার্জারি।",
+        reconstructiveDetails: "মূত্রনালীর ক্ষতিগ্রস্ত বা ত্রুটিপূর্ণ অংশ মেরামত করা হয়।\n\nকাদের লাগে: নালী সরু হয়ে যাওয়া, জন্মগত ত্রুটি, দুর্ঘটনায় আঘাত, বা আগের সার্জারির জটিলতা।\n\nকিভাবে হয়: শরীরের অন্য জায়গার টিস্যু দিয়ে ক্ষতিগ্রস্ত অংশ মেরামত করে স্বাভাবিক কার্যকারিতা ফিরিয়ে আনা হয়।",
+        
+        pediatricTitle: "পেডিয়াট্রিক ইউরোলজি",
+        pediatricDesc: "শিশুদের জন্মগত ত্রুটি এবং মূত্রনালীর সমস্যার সফল রিকনস্ট্রাক্টিভ সার্জারি।",
+        pediatricDetails: "শিশুদের প্রস্রাব ও যৌনাঙ্গের সমস্যা চিকিৎসা করা হয়।\n\n• অণ্ডকোষ নিচে না নামা\n• জন্মগত ত্রুটি\n• বিছানায় প্রস্রাব করা\n• প্রস্রাব উল্টো দিকে যাওয়া\n\nশিশুদের জন্য আলাদা ও কোমল পদ্ধতিতে চিকিৎসা করা হয়।",
+        
+        femaleUrologyTitle: "ফিমেল ইউরোলজি",
+        femaleUrologyDesc: "মহিলাদের প্রস্রাবের সমস্যা, পেলভিক মেডিসিন ও ইউরোলজিক্যাল সমস্যার বিশেষ চিকিৎসা।",
+        femaleUrologyDetails: "মহিলাদের প্রস্রাবজনিত সমস্যা চিকিৎসা করা হয়।\n\n• প্রস্রাব ধরে রাখতে না পারা\n• অঙ্গ নিচে নেমে আসা\n• বারবার ইনফেকশন\n• সন্তান জন্মের পর ব্লাডার সমস্যা\n\nচিকিৎসা: পেলভিক ব্যায়াম থেকে শুরু করে দরকার হলে ছোট সার্জারি।",
+        
+        laparoscopyRoboticTitle: "ল্যাপারোস্কোপি ও রোবোটিক",
+        laparoscopyRoboticDesc: "নির্ভুল চিকিৎসা ও দ্রুত সুস্থতার জন্য মিনিমালি ইনভেসিভ ল্যাপারোস্কোপিক এবং রোবোটিক সার্জারি।",
+        laparoscopyRoboticDetails: "বড় কাটাছেঁড়া ছাড়াই ছোট ছিদ্র করে ক্যামেরা ও যন্ত্র দিয়ে জটিল অপারেশন করা হয়। রোবোটিক সার্জারিতে রোবটের সাহায্যে আরো নিখুঁতভাবে অপারেশন করা যায়।\n\nকোন কাজে লাগে: কিডনি অপসারণ, প্রোস্টেট অপসারণ, টিউমার অপসারণ।\n\nসুবিধা: কম ব্যথা, কম দাগ, দ্রুত সুস্থ হওয়া।"
       }
     },
     // Banner Section
@@ -369,6 +408,7 @@ export const translations = {
       bdExp: "বাংলাদেশে অভিজ্ঞতা",
       intExp: "আন্তর্জাতিক অভিজ্ঞতা",
       memberTitle: "সদস্যপদ ও সম্মাননা",
+      memberSub: "পেশাগত অন্তর্ভুক্তি",
       educationGroups: {
         degreesTitle: "মেডিকেল ডিগ্রি ও বোর্ড সার্টিফিকেশন",
         fellowshipsTitle: "আন্তর্জাতিক ফেলোশিপসমূহ",

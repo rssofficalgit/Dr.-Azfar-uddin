@@ -16,7 +16,7 @@ export function Chambers() {
         time: language === 'bn' ? "সকাল ৯:০০ - দুপুর ২:০০" : "9:00 AM - 2:00 PM",
         note: t.chambers.closed
       },
-      phones: ["01754995671", "01892760031", "01731457460"]
+      phones: ["01754995671", "01731457460"]
     },
     {
       title: t.chambers.hospitalTitle,
@@ -29,7 +29,7 @@ export function Chambers() {
         time: language === 'bn' ? "সন্ধ্যা ৭:০০ - রাত ৯:০০" : "7:00 PM - 9:00 PM",
         note: t.chambers.closed
       },
-      phones: ["01766316179", "01611885497", "01731457460"]
+      phones: ["01766316179", "01731457460"]
     },
     {
       title: t.chambers.officeTitle,

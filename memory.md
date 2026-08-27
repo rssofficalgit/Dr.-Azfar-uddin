@@ -199,6 +199,13 @@
 
 ## 13. Change Log
 
+* **2026-08-27:** Removed the 'Journals & Research Papers' (Publications) section from the Home page (`Home.tsx`).
+* **2026-08-27:** Removed phone number `01611885497` from `Chambers.tsx` as requested.
+* **2026-08-27:** Added detailed descriptions and 'Who Needs It' text to all 11 services in `translations.ts` (both English and Bengali) and updated the Services popup modal to display this detailed information dynamically.
+* **2026-08-27:** Added an interactive popup modal to the `Services.tsx` component so users can click on any service card to view its details in a modern, animated modal with a booking call-to-action.
+* **2026-08-27:** Replaced the entire Services list (`translations.ts` and `Services.tsx`) with exactly 11 requested items (Andrology, Urological Microsurgery, Endourology and Kidney Stone, General Urology, Male Infertility, Neuro-urology, Uro Oncology, Reconstructive Urology, Pediatric Urology, Female Urology, Laparoscopy & Robotic). All other unrequested services were removed.
+* **2026-08-27:** Removed the phone number `01892760031` from all locations across the site (specifically `Chambers.tsx`).
+* **2026-08-27:** Reordered the Services section in `translations.ts` and `Services.tsx` based on user preference and renamed the top 5 titles to exactly match the user's provided strings (Andrology, Urological Microsurgery, Endourology and Kidney Stone, General Urology, Male Infertility).
 * **2026-08-12:** Removed the "Direct Contact Info" section from `ContactPage.tsx` per user request, leaving a clean layout with the Hero header and Chambers section.
 * **2026-08-12:** Translated Working Experience (`expTitle`, `expSub`, `bdExp`, `intExp`, `bdExpList`, `intExpList`) and Memberships & Honors (`memberTitle`, `memberSub`, `membershipsList`) to full Bangla in `translations.ts` and `AboutPage.tsx` per user request.
 * **2026-08-12:** Grouped Education section into 4 distinct categories (Medical Degrees, International Fellowships, Specialized Training, Early Academic Excellence) with header icons and cards in `translations.ts` and `AboutPage.tsx` per user request.

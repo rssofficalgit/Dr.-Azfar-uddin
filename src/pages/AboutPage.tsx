@@ -227,7 +227,7 @@ function SectionHeader({ title, subtitle }: { title: string; subtitle: string })
   );
 }
 
-function EducationCard({ title, desc }: { title: string; desc: string }) {
+function EducationCard({ title, desc }: { title: string; desc: string; key?: number | string }) {
   return (
     <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-[0_2px_12px_-4px_rgba(0,0,0,0.04)] hover:-translate-y-1 hover:border-amber-200 hover:shadow-lg transition-all duration-300">
       <div className="flex items-start gap-4">
@@ -243,7 +243,7 @@ function EducationCard({ title, desc }: { title: string; desc: string }) {
   );
 }
 
-function ExpItem({ text, active = false }: { text: string; active?: boolean }) {
+function ExpItem({ text, active = false }: { text: string; active?: boolean; key?: number | string }) {
   return (
     <li className="flex items-start gap-3">
       <div className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${active ? 'bg-amber-500' : 'bg-slate-300'}`}></div>
@@ -252,7 +252,7 @@ function ExpItem({ text, active = false }: { text: string; active?: boolean }) {
   );
 }
 
-function CheckItem({ text }: { text: string }) {
+function CheckItem({ text }: { text: string; key?: number | string }) {
   return (
     <li className="flex items-start gap-3">
       <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0" />

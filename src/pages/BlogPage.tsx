@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { blogs } from '../data/blogs';
 import { useLanguage } from '../hooks/useLanguage';
 
-function VideoCard({ videoId, index }: { videoId: string; index: number }) {
+function VideoCard({ videoId, index }: { videoId: string; index: number; key?: number | string }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (

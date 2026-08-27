@@ -4,7 +4,6 @@ import { About } from '../components/home/About';
 import { Services } from '../components/home/Services';
 import { Banner } from '../components/home/Banner';
 import { Chambers } from '../components/home/Chambers';
-import { Publications } from '../components/home/Publications';
 import { LatestBlogs } from '../components/home/LatestBlogs';
 import { FeaturedVideos } from '../components/home/FeaturedVideos';
 import { Testimonials } from '../components/home/Testimonials';
@@ -19,7 +18,6 @@ export function Home() {
       <Services />
       <Banner />
       <Chambers />
-      <Publications />
       <LatestBlogs />
       <FeaturedVideos />
       <Testimonials />
