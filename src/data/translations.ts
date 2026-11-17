@@ -61,8 +61,8 @@ export const translations = {
         andrologyDetails: "Deals with men's sexual and reproductive problems.\n\n• Erection problems or not being able to maintain it\n• Low testosterone hormone\n• Quick or premature ejaculation\n\nTreatment: Blood test checks hormones, blood flow and nerves are examined, then medicine, hormone therapy, or a small procedure is given.",
         
         microsurgeryTitle: "Urological Microsurgery",
-        microsurgeryDesc: "Vasovasostomy and Vasoepididymostomy microsurgery for vasectomy reversal and blockage repair.",
-        microsurgeryDetails: "Surgery done under a microscope on very tiny body parts.\n\nWhen needed:\n• Reversing vasectomy\n• Fixing varicocele\n• Collecting sperm\n\nHow: Surgeon uses small tools and a microscope to join fine tubes or blood vessels.",
+        microsurgeryDesc: "The only American-trained urological microsurgeon in Bangladesh performing one of the highest numbers of microsurgical varicocelectomies in the world.",
+        microsurgeryDetails: "The only American-trained urological microsurgeon in Bangladesh performing one of the highest numbers of microsurgical varicocelectomies in the world.\n\nDelicate surgical procedures performed under a high-power operating microscope on ultra-fine anatomical structures.\n\nWhen Needed:\n• Microsurgical Varicocelectomy (Gold standard treatment for varicocele)\n• Vasectomy Reversal (Vasovasostomy & Vasoepididymostomy)\n• Advanced sperm retrieval for male infertility (MicroTESE, MESA)\n\nHow: The surgeon utilizes specialized micro-instruments and a high-magnification surgical microscope to meticulously reconnect and repair microscopic vessels and ducts.",
         
         kidneyStoneTitle: "Endourology and Kidney Stone",
         kidneyStoneDesc: "Minimally invasive laser procedures for precise, painless removal of kidney & ureter stones.",
@@ -123,7 +123,8 @@ export const translations = {
     testimonials: {
       tag: "Patient Stories",
       title: "What Our Patients Say",
-      subtitle: "Real experiences from patients who regained their health, confidence, and quality of life."
+      subtitle: "Real experiences from patients who regained their health, confidence, and quality of life.",
+      googleReviewBtn: "Give Your Review on Google"
     },
     // Publications Section
     publications: {
@@ -294,8 +295,8 @@ export const translations = {
         andrologyDetails: "পুরুষদের যৌন ও প্রজনন সমস্যা নিয়ে কাজ করে।\n\n• লিঙ্গ শক্ত না হওয়া বা উত্থান ধরে রাখতে না পারা\n• টেস্টোস্টেরন হরমোন কমে যাওয়া\n• দ্রুত বীর্যপাত হয়ে যাওয়া\n\nচিকিৎসা: রক্ত পরীক্ষা করে হরমোন দেখা হয়, রক্ত চলাচল ও স্নায়ু পরীক্ষা করা হয়, তারপর ওষুধ, হরমোন থেরাপি বা ছোট প্রসিডিউর দেওয়া হয়।",
         
         microsurgeryTitle: "ইউরোলজিক্যাল মাইক্রোসার্জারি",
-        microsurgeryDesc: "ভ্যাসেকটমি রিভার্সাল এবং মূত্র ও শুক্রনালীর ব্লক খোলার জন্য সূক্ষ্ম মাইক্রোসার্জিক্যাল চিকিৎসা।",
-        microsurgeryDetails: "খুব ছোট ও সূক্ষ্ম অঙ্গের উপর মাইক্রোস্কোপ দিয়ে সার্জারি করা হয়।\n\nকখন লাগে:\n• ভ্যাসেকটমির পর নালী জোড়া লাগাতে\n• ভ্যারিকোসিল ঠিক করতে\n• স্পার্ম সংগ্রহ করতে\n\nকিভাবে হয়: সার্জন ছোট যন্ত্র ও মাইক্রোস্কোপ দিয়ে সূক্ষ্ম নালী বা রক্তনালী জোড়া লাগান।",
+        microsurgeryDesc: "বাংলাদেশে একমাত্র আমেরিকান প্রশিক্ষণ প্রাপ্ত ইউরোলজিক্যাল মাইক্রো সার্জন যিনি বিশ্বে অন্যতম সর্বোচ্চ মাইক্রো সার্জিক্যাল ভেরিকোসিলেকটমি করে থাকেন ।",
+        microsurgeryDetails: "বাংলাদেশে একমাত্র আমেরিকান প্রশিক্ষণ প্রাপ্ত ইউরোলজিক্যাল মাইক্রো সার্জন যিনি বিশ্বে অন্যতম সর্বোচ্চ মাইক্রো সার্জিক্যাল ভেরিকোসিলেকটমি করে থাকেন।\n\nখুব ছোট ও সূক্ষ্ম অঙ্গের উপর উচ্চ ক্ষমতাসম্পন্ন অপারেটিং মাইক্রোস্কোপ দিয়ে এই আধুনিক সার্জারি করা হয়।\n\nকখন লাগে:\n• মাইক্রোসার্জিক্যাল ভ্যারিকোসিলেকটমি (ভ্যারিকোসিলের গোল্ড স্ট্যান্ডার্ড চিকিৎসা)\n• ভ্যাসেকটমির পর নালী জোড়া লাগানো (Vasovasostomy / VEA)\n• পুরুষ বন্ধ্যাত্ব চিকিৎসায় স্পার্ম সংগ্রহ (MicroTESE, MESA)\n\nকিভাবে হয়: সার্জন বিশেষ সূক্ষ্ম মাইক্রো-যন্ত্র ও উচ্চ ক্ষমতাসম্পন্ন অপারেটিং মাইক্রোস্কোপ দিয়ে অতি সূক্ষ্ম নালী বা রক্তনালী নিখুঁতভাবে জোড়া লাগান ও মেরামত করেন।",
         
         kidneyStoneTitle: "এন্ডো-ইউরোলজি ও কিডনি পাথর",
         kidneyStoneDesc: "বিনা কাটায় লেজারের সাহায্যে কিডনি ও মূত্রনালীর পাথর সূক্ষ্ম ও ব্যথামুক্তভাবে অপসারণ।",
@@ -356,7 +357,8 @@ export const translations = {
     testimonials: {
       tag: "রোগীদের মতামত",
       title: "রোগীদের অভিজ্ঞতা ও প্রতিক্রিয়া",
-      subtitle: "সফল চিকিৎসার পর সুস্থ জীবনে ফিরে আসা সম্মানিত রোগীদের আন্তরিক মতামত।"
+      subtitle: "সফল চিকিৎসার পর সুস্থ জীবনে ফিরে আসা সম্মানিত রোগীদের আন্তরিক মতামত।",
+      googleReviewBtn: "গুগলে আপনার রিভিউ দিন"
     },
     // Publications Section
     publications: {

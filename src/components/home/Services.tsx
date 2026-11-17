@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../../hooks/useLanguage';
 
 export function Services() {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   
   const services = [
     { title: t.services.items.andrologyTitle, icon: Activity, desc: t.services.items.andrologyDesc, details: t.services.items.andrologyDetails },

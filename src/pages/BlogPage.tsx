@@ -139,7 +139,7 @@ export function BlogPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {[
-              "YK7WE-yvfcw", "_Pcr1bU3t2s", "Ac_IP5JUb7A", "bhUJlqE3aqU", "XIW6iTjPiXI",
+              "eD1GJD-4KQo", "YK7WE-yvfcw", "_Pcr1bU3t2s", "Ac_IP5JUb7A", "bhUJlqE3aqU", "XIW6iTjPiXI",
               "wusFrrj-mmc", "xo43Pd2j1W4", "g6UABhiTW2E", "OBYDcWDkTIw", "2-FjGDSKhBA",
               "6J7tgaG-xrE", "iHfTe3KaoPA", "uXktRI9OGxs", "FLHxkjjcHBI", "ryrUrVioo70",
               "r7l2C7tegNc", "PHiY2aNQHR4", "ebs8ZD9yGs8", "qGLDONDhwxY", "VgGObhVLJ0Y",

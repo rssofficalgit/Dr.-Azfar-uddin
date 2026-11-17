@@ -2,7 +2,7 @@
 
 > **Project Name:** React Starter Template (Initialization Engine)  
 > **Repository Status:** Initialized & Active  
-> **Last Updated:** 2026-07-29  
+> **Last Updated:** 2026-11-17  
 
 ---
 
@@ -198,6 +198,14 @@
 ---
 
 ## 13. Change Log
+
+* **2026-11-17:** Added a Google Review call-to-action button to the Testimonials/Review section in `Testimonials.tsx` linking to `https://g.page/r/CfHC4w1-UQcEEAE/review`. Configured with authentic Google multicolor SVG icon, bilingual labels in `translations.ts` (*"Give Your Review on Google"* / *"গুগলে আপনার রিভিউ দিন"*), 44px+ mobile touch targets, and external tab security attributes. Verified with ESLint and production build.
+* **2026-11-17:** Added new YouTube video `eD1GJD-4KQo` (অত্যাধুনিক পদ্ধতিতে ভেরিকসিলের মাইক্রোসার্জারি) as the 1st video in both `FeaturedVideos.tsx` (Homepage Featured Videos) and `BlogPage.tsx` (Video Gallery).
+* **2026-11-17:** Updated the Microsurgery section in `translations.ts` (`microsurgeryDesc` & `microsurgeryDetails`) and `blogs.ts`:
+  - Bengali: *"বাংলাদেশে একমাত্র আমেরিকান প্রশিক্ষণ প্রাপ্ত ইউরোলজিক্যাল মাইক্রো সার্জন যিনি বিশ্বে অন্যতম সর্বোচ্চ মাইক্রো সার্জিক্যাল ভেরিকোসিলেকটমি করে থাকেন ।"*
+  - English: *"The only American-trained urological microsurgeon in Bangladesh performing one of the highest numbers of microsurgical varicocelectomies in the world."*
+  - Included detailed breakdown of indications (Microsurgical Varicocelectomy, Vasectomy reversal, sperm retrieval) and operating microscope procedure details in the service modal.
+* **2026-11-17:** Cleaned up unused variable `language` in `Services.tsx` and verified clean lint (`npm run lint`) and production build (`npm run build`) with zero errors.
 
 * **2026-08-27:** Removed the 'Journals & Research Papers' (Publications) section from the Home page (`Home.tsx`).
 * **2026-08-27:** Removed phone number `01611885497` from `Chambers.tsx` as requested.

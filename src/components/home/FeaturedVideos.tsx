@@ -77,8 +77,8 @@ export function FeaturedVideos() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           
+          <HomeVideoCard videoId="eD1GJD-4KQo" />
           <HomeVideoCard videoId="YK7WE-yvfcw" />
-          <HomeVideoCard videoId="_Pcr1bU3t2s" />
 
         </div>
 
