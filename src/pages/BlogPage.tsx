@@ -8,15 +8,15 @@ function VideoCard({ videoId, index }: { videoId: string; index: number; key?: n
 
   return (
     <div className="group flex flex-col gap-4">
-      <div 
+      <div
         className="w-full aspect-video rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-slate-900 relative group-hover:shadow-[0_20px_40px_-15px_rgba(4,76,60,0.2)] transition-all duration-500 group-hover:-translate-y-1 cursor-pointer"
         onClick={() => setIsLoaded(true)}
       >
         {!isLoaded ? (
           <>
-            <img 
-              src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} 
-              alt={`Medical Insight Video ${index + 1}`} 
+            <img
+              src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+              alt={`Medical Insight Video ${index + 1}`}
               className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               loading="lazy"
             />
@@ -30,13 +30,13 @@ function VideoCard({ videoId, index }: { videoId: string; index: number; key?: n
             </div>
           </>
         ) : (
-          <iframe 
+          <iframe
             className="absolute inset-0 w-full h-full animate-in fade-in duration-700"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} 
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
             title={`Medical Video ${index + 1}`}
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerPolicy="strict-origin-when-cross-origin" 
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         )}
@@ -50,7 +50,7 @@ export function BlogPage() {
 
   return (
     <div className="w-full bg-slate-50/50 min-h-screen">
-      
+
       {/* Blog Page Hero */}
       <section className="relative bg-[#044c3c] overflow-hidden pt-16 lg:pt-24 pb-16 lg:pb-24">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
@@ -72,7 +72,7 @@ export function BlogPage() {
       {/* Main Content: Blog & Social Grid */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {blogs.map((blog) => (
               <article key={blog.id} className="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 group hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(4,76,60,0.15)] transition-all duration-500 flex flex-col">
@@ -92,7 +92,7 @@ export function BlogPage() {
                   <div className="flex items-center text-slate-400 text-sm font-medium mb-3 gap-4">
                     <span>{blog.date}</span>
                     <span className="flex items-center gap-1">
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                       {blog.readTime}
                     </span>
                   </div>
@@ -118,10 +118,10 @@ export function BlogPage() {
       {/* Video Gallery Section */}
       <section id="video-gallery" className="py-16 lg:py-24 bg-white relative">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
-          
+
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h4 className="text-rose-500 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3 flex items-center justify-center gap-2">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" /></svg>
               Video Gallery
             </h4>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#044c3c] mb-6">
